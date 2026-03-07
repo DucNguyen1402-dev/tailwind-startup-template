@@ -28,6 +28,9 @@ Layout: Advanced layouts using Flexbox and CSS Grid.
 👨‍💻 Quick Start
 
 Clone the repo: git clone https://github.com/DucNguyen1402-dev/tailwind-startup-template.git
+
 cd project
+
 npm install
+
 npm run dev
