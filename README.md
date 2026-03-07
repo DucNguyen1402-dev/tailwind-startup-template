@@ -1,9 +1,10 @@
 🚀 Base Startup Landing Page
 
-A modern, high-performance landing page built entirely with Tailwind CSS. This project demonstrates UI implementation skills as part of my Bootcamp portfolio.
+A modern, high-performance landing page built entirely with Tailwind CSS. This project demonstrates my UI implementation skills using Tailwind CSS.
+
+🌐 Live Demo: https://tailwind-startup.vercel.app/
 
 ---
-🌐 Live Demo: https://tailwind-startup.vercel.app/
 
 ⚙️ Tech Stack
 
