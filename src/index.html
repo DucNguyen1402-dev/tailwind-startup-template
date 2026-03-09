@@ -28,8 +28,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+
     <!-- CSS -->
     <link rel="stylesheet" href="../dist/output.css" />
+
+    <!-- Custom Scripts -->
+    <script src="./js/header.js" defer></script>
 
     <!-- Open Graph (SEO & Social) -->
     <meta property="og:title" content="Base - Tailwind CSS Startup Template" />
@@ -51,14 +55,233 @@
 
     <meta property="og:type" content="website" />
   </head>
-  <body>
-    <header></header>
 
-    <main>
-      <section class="hero">
-        <div class="container"></div>
-      </section>
+  <body class="dark:bg-slate-900">
 
+
+    <header
+      class="
+      absolute
+      w-full
+      top-8 left-1/2 -translate-x-1/2
+      lg:mx-auto
+      lg:flex lg:max-w-7xl lg:items-center lg:justify-between"
+    >
+      <div
+        class="header-left flex items-center justify-between px-6 md:px-8 lg:w-1/2 lg:p-0"
+      >
+        <a
+          href="/src"
+          class="w-28 md:w-32 lg:w-48 transition-transform duration-300 hover:scale-102"
+        >
+          <img
+            src="./assets/img/contents/logo-light.svg"
+            alt="Base logo"
+            class="block dark:hidden"
+          />
+          <img
+            src="./assets/img/contents/logo-dark.svg"
+            alt="Base logo"
+            class="hidden dark:block"
+          />
+        </a>
+        <nav
+          class="relative flex items-center justify-between gap-8 w-[25%] md:w-25 lg:w-auto"
+        >
+          <button
+            aria-label="Toggle theme"
+            class="block lg:hidden w-6 md:w-8"
+            data-btn="switch-mode"
+          >
+            <img
+              src="./assets/img/contents/night-mode-icon.png"
+              alt="switch mode icon"
+              class="block cursor-pointer transition-transform duration-200 hover:scale-110 dark:hidden"
+              data-img="icon"
+            />
+            <img
+              src="./assets/img/contents/light-mode-icon.png"
+              alt="switch mode icon"
+              class="hidden cursor-pointer transition-transform duration-200 hover:scale-110 dark:block "
+              data-img="icon"
+            />
+          </button>
+
+          <button class="lg:hidden text-xl md:text-[26px] md:text-white" data-btn="toggle">
+            <span
+              class="fa-solid fa-bars transition-transform duration-300 dark:text-slate-100"
+            ></span>
+          </button>
+
+          <ul
+            class="
+             absolute lg:static top-[180%] -right-4 md:right-0 lg:top-[120%] lg:right-0 
+             flex flex-col lg:flex-row gap-4 lg:gap-10 lg:items-center
+             w-[95vw] md:w-180 lg:w-full pt-4 pb-4 px-6 
+             text-gray-500  dark:text-slate-100 font-medium lg:text-lg 
+             bg-white dark:bg-slate-800 lg:bg-transparent lg:dark:bg-transparent 
+             border-none rounded-md  
+             shadow-md lg:shadow-none
+             opacity-0 lg:opacity-100
+            transition-all duration-100"
+            data-list="nav-dropdown"
+          >
+            <li class="transition-colors duration-300 hover:text-indigo-500">
+              <a href="javascript:void(0)">Home</a>
+            </li>
+            <li class="transition-colors duration-300 hover:text-indigo-500">
+              <a href="javascript:void(0)">Features</a>
+            </li>
+            <li class="group relative">
+              <a
+                href="javascript:void(0)"
+                class="transition-colors duration-300 group-hover:text-indigo-500"
+                data-btn="dropdown"
+              >
+                <span>Pages</span>
+                <span class="fa-solid fa-chevron-down text-sm"></span>
+              </a>
+              <div
+                class="wrapper 
+                absolute left-0 -top-8 lg:top-full    
+                pt-8 
+                -translate-x-4 translate-y-10 group-hover:translate-y-0
+                transition duration-500
+                opacity-0 group-hover:opacity-100 
+                pointer-events-none group-hover:pointer-events-auto
+                "
+                data-list="dropdown"
+              >
+                <ul
+                  class="dropdown-menu 
+                  relative
+                  w-52
+                  p-2 lg:pb-4
+                  bg-white dark:bg-slate-800
+                  text-base dark:text-slate-200
+                  border-none
+                  rounded-md 
+                  shadow-md 
+                  before:content-[''] before:absolute before:-top-1.5 before:left-6 before:w-3 before:h-3 
+                  before:rotate-45 before:bg-white dark:before:bg-slate-800 "
+                >
+                  <li
+                    class="
+                    relative
+                    overflow-hidden
+                    mb-1 lg:mb-3 
+                    py-1 lg:py-2 
+                    hover:text-gray-700 dark:hover:text-slate-100 
+                    after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-linear-to-r after:from-indigo-500 after:to-pink-500 
+                    after:transition-transform after:duration-500 after:ease-in-out 
+                    after:-translate-x-full hover:after:translate-x-0 "
+                  >
+                    <a href="javascript:void(0)">Blog Grid</a>
+                  </li>
+                  <li
+                    class="
+                    relative
+                    overflow-hidden
+                    mb-1 lg:mb-3 
+                    py-1 lg:py-2 
+                    hover:text-gray-700 dark:hover:text-slate-100 
+                    after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-linear-to-r after:from-indigo-500 after:to-pink-500 
+                    after:transition-transform after:duration-500 after:ease-in-out 
+                    after:-translate-x-full hover:after:translate-x-0"
+                  >
+                    <a href="javascript:void(0)">Blog Single</a>
+                  </li>
+                  <li
+                    class="relative
+                    overflow-hidden
+                    mb-1 lg:mb-3 
+                    py-1 lg:py-2 
+                    hover:text-gray-700 dark:hover:text-gray-200 
+                    after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-linear-to-r after:from-indigo-500 after:to-pink-500 
+                    after:transition-transform after:duration-500 after:ease-in-out 
+                    after:-translate-x-full hover:after:translate-x-0"
+                  >
+                    <a href="javascript:void(0)">Sign in</a>
+                  </li>
+                  <li
+                    class="relative
+                    overflow-hidden
+                    mb-1 lg:mb-3 
+                    py-1 lg:py-2 
+                    hover:text-gray-700 dark:hover:text-slate-100 
+                    after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-linear-to-r after:from-indigo-500 after:to-pink-500 
+                    after:transition-transform after:duration-500 after:ease-in-out 
+                    after:-translate-x-full hover:after:translate-x-0"
+                  >
+                    <a href="javascript:void(0)">Sign up</a>
+                  </li>
+                  <li
+                    class="relative
+                    overflow-hidden
+                    mb-1 lg:mb-3 
+                    py-1 lg:py-2 
+                    hover:text-gray-700 dark:hover:text-slate-100 
+                    after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-linear-to-r after:from-indigo-500 after:to-pink-500 
+                    after:transition-transform after:duration-500 after:ease-in-out 
+                    after:-translate-x-full hover:after:translate-x-0"
+                  >
+                    <a href="javascript:void(0)">404</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="transition-colors duration-300 lg:hover:text-indigo-500">
+              <a href="javascript:void(0)">Support</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header-right hidden lg:flex lg:gap-8 lg:items-center">
+        <button aria-label="Toggle theme" class="w-8" data-btn="switch-mode">
+          <img
+            src="./assets/img/contents/night-mode-icon.png"
+            alt="switch mode icon"
+            class="block cursor-pointer transition-transform duration-200 hover:scale-110 dark:hidden"
+            data-img="icon"
+          />
+          <img
+            src="./assets/img/contents/light-mode-icon.png"
+            alt="switch mode icon"
+            class="hidden cursor-pointer transition-transform duration-200 hover:scale-110 dark:block"
+            data-img="icon"
+          />
+        </button>
+
+        <div class="flex items-center gap-8 text-white font-medium">
+          <button
+            class="text-lg cursor-pointer transition-colors duration-200 hover:text-gray-200 "
+          >
+            Sign in
+          </button>
+          <button
+            class="px-8 py-3 bg-white/15 hover:bg-white/25 border-none rounded-full shadow-sm cursor-pointer transition-colors duration-200 "
+          >
+            Sign up
+          </button>
+        </div>
+      </div>
+    </header>
+
+
+
+
+    <!-- <main>
+   
+      
+    
+   <section
+      class="hero  
+      md:bg-[url('../src/assets/img/backgrounds/hero-layer1.png'),url('../src/assets/img/backgrounds/hero-layer2.svg')] md:bg-size-[50%] md:bg-no-repeat md:bg-top-right  md:h-screen"
+    >
+  </section>
+
+        </div>
       <section class="features"></section>
 
       <section class="about"></section>
@@ -96,6 +319,7 @@
 
     <footer></footer>
 
-    <button class="back-to-top"></button>
+    <button class="back-to-top"></button> -->
+
   </body>
 </html>
