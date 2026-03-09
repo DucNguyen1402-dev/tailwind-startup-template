@@ -13,7 +13,7 @@
     />
 
     <!-- Favicon -->
-    <link rel="icon" href="./assets/icons/favicon.svg" />
+    <link rel="icon" href="./src/assets/icons/favicon.svg" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,10 +30,10 @@
     />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="./dist/output.css" />
 
     <!-- Custom Scripts -->
-    <script src="./js/header.js" defer></script>
+    <script src="./src/js/header.js" defer></script>
 
     <!-- Open Graph (SEO & Social) -->
     <meta property="og:title" content="Base - Tailwind CSS Startup Template" />
@@ -45,7 +45,7 @@
 
     <meta
       property="og:image"
-      content="https://tailwind-startup-template.vercel.app/assets/img/contents/og-img.png"
+      content="https://tailwind-startup-template.vercel.app/src/assets/img/contents/og-img.png"
     />
 
     <meta
@@ -71,16 +71,16 @@
         class="header-left flex items-center justify-between px-6 md:px-8 lg:w-1/2 lg:p-0"
       >
         <a
-          href="/src"
+          href="/"
           class="w-28 md:w-32 lg:w-48 transition-transform duration-300 hover:scale-102"
         >
           <img
-            src="./assets/img/contents/logo-light.svg"
+            src="./src/assets/img/contents/logo-light.svg"
             alt="Base logo"
             class="block dark:hidden"
           />
           <img
-            src="./assets/img/contents/logo-dark.svg"
+            src="./src/assets/img/contents/logo-dark.svg"
             alt="Base logo"
             class="hidden dark:block"
           />
@@ -94,13 +94,13 @@
             data-btn="switch-mode"
           >
             <img
-              src="./assets/img/contents/night-mode-icon.png"
+              src="./src/assets/img/contents/night-mode-icon.png"
               alt="switch mode icon"
               class="block cursor-pointer transition-transform duration-200 hover:scale-110 dark:hidden"
               data-img="icon"
             />
             <img
-              src="./assets/img/contents/light-mode-icon.png"
+              src="./src/assets/img/contents/light-mode-icon.png"
               alt="switch mode icon"
               class="hidden cursor-pointer transition-transform duration-200 hover:scale-110 dark:block "
               data-img="icon"
@@ -240,13 +240,13 @@
       <div class="header-right hidden lg:flex lg:gap-8 lg:items-center">
         <button aria-label="Toggle theme" class="w-8" data-btn="switch-mode">
           <img
-            src="./assets/img/contents/night-mode-icon.png"
+            src="./src/assets/img/contents/night-mode-icon.png"
             alt="switch mode icon"
             class="block cursor-pointer transition-transform duration-200 hover:scale-110 dark:hidden"
             data-img="icon"
           />
           <img
-            src="./assets/img/contents/light-mode-icon.png"
+            src="./src/assets/img/contents/light-mode-icon.png"
             alt="switch mode icon"
             class="hidden cursor-pointer transition-transform duration-200 hover:scale-110 dark:block"
             data-img="icon"
