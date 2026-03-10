@@ -44,3 +44,15 @@ document.querySelectorAll('[data-btn="dropdown"]').forEach((btn) => {
     dropdown.classList.toggle("pointer-events-auto");
   });
 });
+
+
+/* ===============================================
+ TOGGLE HEADER DATA ATTRIBUTE BASED ON SCROLL POSITION
+  ===============================================*/
+
+const header = document.querySelector('header');
+window.addEventListener('scroll', () => {
+  header.dataset.scrolled = window.scrollY > 10;
+});
+
+
