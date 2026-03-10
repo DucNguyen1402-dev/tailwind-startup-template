@@ -56,25 +56,38 @@
     <meta property="og:type" content="website" />
   </head>
 
-  <body class="dark:bg-slate-900">
+<body class="
+  md:bg-[url('../src/assets/img/backgrounds/hero-layer1.png'),url('../src/assets/img/backgrounds/hero-layer2.svg')] 
+  md:bg-no-repeat 
+  md:bg-top-right
+  md:bg-size-[50%] 
+  2xl:bg-size-[40%]
+  dark:bg-slate-900"
+
+  >
 
 
     <header
+      data-scrolled="false"
       class="
-      absolute
+      sticky top-0
+      z-50
       w-full
-      top-8 left-1/2 -translate-x-1/2
-      lg:mx-auto
-      lg:flex lg:max-w-7xl lg:items-center lg:justify-between"
+      mt-6 lg:mt-0
+      group
+      data-[scrolled=true]:bg-white dark:data-[scrolled=true]:bg-slate-900 data-[scrolled=true]:shadow-md
+ 
+      "
     >
-      <div
-        class="header-left flex items-center justify-between px-6 md:px-8 lg:w-1/2 lg:p-0"
-      >
-        <a
+      <div class="header-container max-w-7xl 2xl:max-w-350 lg:mx-auto lg:py-4 lg:flex lg:items-center lg:justify-between ">
+        <div
+        class="header-left flex items-center justify-between py-3 px-6 md:px-8 lg:w-1/2 lg:p-0"
+         >
+         <a
           href="/"
-          class="w-28 md:w-32 lg:w-48 transition-transform duration-300 hover:scale-102"
-        >
-          <img
+          class="w-26 md:w-32 lg:w-48 transition-transform duration-300 hover:scale-102"
+          >
+         <img
             src="./src/assets/img/contents/logo-light.svg"
             alt="Base logo"
             class="block dark:hidden"
@@ -107,9 +120,14 @@
             />
           </button>
 
-          <button class="lg:hidden text-xl md:text-[26px] md:text-white" data-btn="toggle">
+          <button class="lg:hidden text-xl md:text-[26px] " data-btn="toggle">
             <span
-              class="fa-solid fa-bars transition-transform duration-300 dark:text-slate-100"
+              class="
+              fa-solid fa-bars 
+              md:text-white dark:text-slate-100
+              md:group-data-[scrolled=true]:text-slate-800
+              transition-transform duration-300 
+              "
             ></span>
           </button>
 
@@ -237,7 +255,7 @@
         </nav>
       </div>
 
-      <div class="header-right hidden lg:flex lg:gap-8 lg:items-center">
+      <div class="header-right group/btn hidden lg:flex lg:gap-8 lg:items-center">
         <button aria-label="Toggle theme" class="w-8" data-btn="switch-mode">
           <img
             src="./src/assets/img/contents/night-mode-icon.png"
@@ -253,18 +271,32 @@
           />
         </button>
 
-        <div class="flex items-center gap-8 text-white font-medium">
+        <div class="
+        flex items-center gap-8
+        text-white font-medium
+        ">
           <button
-            class="text-lg cursor-pointer transition-colors duration-200 hover:text-gray-200 "
+            class="sign-in
+            text-lg cursor-pointer transition-colors duration-200 hover:text-gray-200
+          group-data-[scrolled=true]:text-gray-400 group-data-[scrolled=true]:hover:text-gray-500 
+          dark:group-data-[scrolled=true]:text-gray-100 dark:group-[scrolled=true]-scrolled:hover:text-gray-200
+            "
           >
             Sign in
           </button>
           <button
-            class="px-8 py-3 bg-white/15 hover:bg-white/25 border-none rounded-full shadow-sm cursor-pointer transition-colors duration-200 "
+            class="sign-up 
+            px-8 py-3 bg-white/15 hover:bg-white/25 border-none rounded-full shadow-sm cursor-pointer transition-colors duration-200
+            group-data-[scrolled=true]:bg-blue-500  group-data-[scrolled=true]:hover:bg-blue-600  
+            group-data-[scrolled=true]:dark:bg:blue:500 group-data-[scrolled=true]: dark:hover:bg-blue-400 
+           
+            "
+            
           >
             Sign up
           </button>
         </div>
+      </div>
       </div>
     </header>
 
@@ -273,17 +305,12 @@
         relative
         z-0
         mb-24
-        md:bg-[url('../src/assets/img/backgrounds/hero-layer1.png'),url('../src/assets/img/backgrounds/hero-layer2.svg')] 
-        md:bg-no-repeat 
-        md:bg-top-right
-        md:bg-size-[50%] 
-        2xl:bg-size-[40%]
         "
         >
         <div
           class="hero-container 
           w-full max-w-7xl 2xl:max-w-350 mx-auto
-          px-3 md:px-8 lg:px-0 pt-36 md:pt-38 lg:pt-52 lg:pb-32 xl:pb-72
+          px-3 md:px-8 lg:px-0 pt-16 lg:pt-32 lg:pb-32 xl:pb-72
           "
         >
           <h1 class="max-w-95 md:max-w-90 lg:max-w-1/2 mb-6 text-3xl lg:text-5xl lg:leading-[1.2] font-semibold dark:text-slate-50">
@@ -305,6 +332,7 @@
           px-6 py-4
          text-white font-medium 
           border-none rounded-full 
+          shadow-md
           cursor-pointer
           transition-colors duration-300
           bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-500"
@@ -316,19 +344,20 @@
         </div>
        
         <img src="./src/assets/img/backgrounds/hero-icon1.svg" 
-        class="pointer-events-none hidden 2xl:block absolute right-[30%] bottom-[25%]"
+        class="pointer-events-none hidden 2xl:block absolute right-[35%] bottom-[50%]"
         alt="hero icon">
         <img src="./src/assets/img/backgrounds/hero-icon2.svg" 
-        class="pointer-events-none hidden 2xl:block absolute right-[8%] bottom-[12%]"
+        class="pointer-events-none hidden 2xl:block absolute right-[25%] bottom-[20%]"
         alt="hero icon">
         <img src="./src/assets/img/backgrounds/hero-icon3.svg"
-        class="pointer-events-none hidden 2xl:block absolute right-[38%] bottom-[50%]"
+        class="pointer-events-none hidden 2xl:block absolute right-[8%] bottom-[15%]  "
          alt="hero icon">
         
 
       </section>
     
 
+      <div class="h-2000"></div>
 
 
         <!-- </div>
@@ -372,5 +401,7 @@
 
     <!-- <button class="back-to-top"></button>  -->
 
+  
+</script>
   </body>
 </html>
