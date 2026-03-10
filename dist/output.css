@@ -7,7 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-400: oklch(70.4% 0.191 22.216);
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
@@ -24,7 +24,6 @@
     --color-slate-900: oklch(20.8% 0.042 265.755);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
-    --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-gray-400: oklch(70.7% 0.022 261.325);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-700: oklch(37.3% 0.034 259.733);
@@ -217,9 +216,6 @@
   .sticky {
     position: sticky;
   }
-  .-top-8 {
-    top: calc(var(--spacing) * -8);
-  }
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
@@ -401,9 +397,6 @@
   .bg-blue-500 {
     background-color: var(--color-blue-500);
   }
-  .bg-transparent {
-    background-color: transparent;
-  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -434,11 +427,11 @@
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
+  .pt-0 {
+    padding-top: calc(var(--spacing) * 0);
+  }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
-  }
-  .pt-8 {
-    padding-top: calc(var(--spacing) * 8);
   }
   .pt-16 {
     padding-top: calc(var(--spacing) * 16);
@@ -547,41 +540,11 @@
       }
     }
   }
-  .group-hover\:translate-y-0 {
-    &:is(:where(.group):hover *) {
+  .group-hover\/dropdown\:pointer-events-auto {
+    &:is(:where(.group\/dropdown):hover *) {
       @media (hover: hover) {
-        --tw-translate-y: calc(var(--spacing) * 0);
-        translate: var(--tw-translate-x) var(--tw-translate-y);
+        pointer-events: auto;
       }
-    }
-  }
-  .group-hover\:text-indigo-500 {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        color: var(--color-indigo-500);
-      }
-    }
-  }
-  .group-hover\:opacity-100 {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        opacity: 100%;
-      }
-    }
-  }
-  .group-data-scroll\:text-gray-500 {
-    &:is(:where(.group)[data-scroll] *) {
-      color: var(--color-gray-500);
-    }
-  }
-  .group-data-scrolled\:text-gray-500 {
-    &:is(:where(.group)[data-scrolled] *) {
-      color: var(--color-gray-500);
-    }
-  }
-  .group-data-\[scroll\=true\]\:text-gray-500 {
-    &:is(:where(.group)[data-scroll="true"] *) {
-      color: var(--color-gray-500);
     }
   }
   .group-data-\[scrolled\=true\]\:bg-blue-500 {
@@ -592,16 +555,6 @@
   .group-data-\[scrolled\=true\]\:text-gray-400 {
     &:is(:where(.group)[data-scrolled="true"] *) {
       color: var(--color-gray-400);
-    }
-  }
-  .group-data-\[scrolled\=true\]\:text-gray-500 {
-    &:is(:where(.group)[data-scrolled="true"] *) {
-      color: var(--color-gray-500);
-    }
-  }
-  .group-data-\[scrolled\=true\]\:text-red-400 {
-    &:is(:where(.group)[data-scrolled="true"] *) {
-      color: var(--color-red-400);
     }
   }
   .before\:absolute {
@@ -785,13 +738,6 @@
       }
     }
   }
-  .hover\:text-gray-400 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-gray-400);
-      }
-    }
-  }
   .hover\:text-gray-700 {
     &:hover {
       @media (hover: hover) {
@@ -813,56 +759,11 @@
       }
     }
   }
-  .group-data-scroll\:hover\:text-gray-400 {
-    &:is(:where(.group)[data-scroll] *) {
-      &:hover {
-        @media (hover: hover) {
-          color: var(--color-gray-400);
-        }
-      }
-    }
-  }
-  .group-data-scrolled\:hover\:text-gray-400 {
-    &:is(:where(.group)[data-scrolled] *) {
-      &:hover {
-        @media (hover: hover) {
-          color: var(--color-gray-400);
-        }
-      }
-    }
-  }
-  .group-data-\[scroll\=true\]\:hover\:text-gray-400 {
-    &:is(:where(.group)[data-scroll="true"] *) {
-      &:hover {
-        @media (hover: hover) {
-          color: var(--color-gray-400);
-        }
-      }
-    }
-  }
   .group-data-\[scrolled\=true\]\:hover\:bg-blue-600 {
     &:is(:where(.group)[data-scrolled="true"] *) {
       &:hover {
         @media (hover: hover) {
           background-color: var(--color-blue-600);
-        }
-      }
-    }
-  }
-  .group-data-\[scrolled\=true\]\:hover\:text-gray-300 {
-    &:is(:where(.group)[data-scrolled="true"] *) {
-      &:hover {
-        @media (hover: hover) {
-          color: var(--color-gray-300);
-        }
-      }
-    }
-  }
-  .group-data-\[scrolled\=true\]\:hover\:text-gray-400 {
-    &:is(:where(.group)[data-scrolled="true"] *) {
-      &:hover {
-        @media (hover: hover) {
-          color: var(--color-gray-400);
         }
       }
     }
@@ -961,11 +862,6 @@
   .md\:text-\[26px\] {
     @media (width >= 48rem) {
       font-size: 26px;
-    }
-  }
-  .md\:text-slate-800 {
-    @media (width >= 48rem) {
-      color: var(--color-slate-800);
     }
   }
   .md\:text-white {
@@ -1115,6 +1011,11 @@
       padding-block: calc(var(--spacing) * 4);
     }
   }
+  .lg\:pt-8 {
+    @media (width >= 64rem) {
+      padding-top: calc(var(--spacing) * 8);
+    }
+  }
   .lg\:pt-32 {
     @media (width >= 64rem) {
       padding-top: calc(var(--spacing) * 32);
@@ -1157,6 +1058,53 @@
     @media (width >= 64rem) {
       --tw-shadow: 0 0 #0000;
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .lg\:group-hover\:translate-y-0 {
+    @media (width >= 64rem) {
+      &:is(:where(.group):hover *) {
+        @media (hover: hover) {
+          --tw-translate-y: calc(var(--spacing) * 0);
+          translate: var(--tw-translate-x) var(--tw-translate-y);
+        }
+      }
+    }
+  }
+  .lg\:group-hover\:opacity-100 {
+    @media (width >= 64rem) {
+      &:is(:where(.group):hover *) {
+        @media (hover: hover) {
+          opacity: 100%;
+        }
+      }
+    }
+  }
+  .lg\:group-hover\/dropdown\:translate-y-0 {
+    @media (width >= 64rem) {
+      &:is(:where(.group\/dropdown):hover *) {
+        @media (hover: hover) {
+          --tw-translate-y: calc(var(--spacing) * 0);
+          translate: var(--tw-translate-x) var(--tw-translate-y);
+        }
+      }
+    }
+  }
+  .lg\:group-hover\/dropdown\:text-indigo-500 {
+    @media (width >= 64rem) {
+      &:is(:where(.group\/dropdown):hover *) {
+        @media (hover: hover) {
+          color: var(--color-indigo-500);
+        }
+      }
+    }
+  }
+  .lg\:group-hover\/dropdown\:opacity-100 {
+    @media (width >= 64rem) {
+      &:is(:where(.group\/dropdown):hover *) {
+        @media (hover: hover) {
+          opacity: 100%;
+        }
+      }
     }
   }
   .lg\:hover\:text-indigo-500 {
@@ -1213,11 +1161,6 @@
       background-color: var(--color-slate-900);
     }
   }
-  .dark\:text-gray-100 {
-    &:where(.dark, .dark *) {
-      color: var(--color-gray-100);
-    }
-  }
   .dark\:text-slate-50 {
     &:where(.dark, .dark *) {
       color: var(--color-slate-50);
@@ -1236,34 +1179,6 @@
   .dark\:text-slate-300 {
     &:where(.dark, .dark *) {
       color: var(--color-slate-300);
-    }
-  }
-  .dark\:group-data-scroll\:text-gray-100 {
-    &:where(.dark, .dark *) {
-      &:is(:where(.group)[data-scroll] *) {
-        color: var(--color-gray-100);
-      }
-    }
-  }
-  .group-data-scroll\:dark\:text-gray-100 {
-    &:is(:where(.group)[data-scroll] *) {
-      &:where(.dark, .dark *) {
-        color: var(--color-gray-100);
-      }
-    }
-  }
-  .dark\:group-data-scrolled\:text-gray-100 {
-    &:where(.dark, .dark *) {
-      &:is(:where(.group)[data-scrolled] *) {
-        color: var(--color-gray-100);
-      }
-    }
-  }
-  .group-data-\[scroll\=true\]\:dark\:text-gray-100 {
-    &:is(:where(.group)[data-scroll="true"] *) {
-      &:where(.dark, .dark *) {
-        color: var(--color-gray-100);
-      }
     }
   }
   .dark\:group-data-\[scrolled\=true\]\:text-gray-100 {
@@ -1326,50 +1241,6 @@
       }
     }
   }
-  .dark\:group-data-scroll\:hover\:text-gray-200 {
-    &:where(.dark, .dark *) {
-      &:is(:where(.group)[data-scroll] *) {
-        &:hover {
-          @media (hover: hover) {
-            color: var(--color-gray-200);
-          }
-        }
-      }
-    }
-  }
-  .group-data-scroll\:dark\:hover\:text-gray-200 {
-    &:is(:where(.group)[data-scroll] *) {
-      &:where(.dark, .dark *) {
-        &:hover {
-          @media (hover: hover) {
-            color: var(--color-gray-200);
-          }
-        }
-      }
-    }
-  }
-  .dark\:group-data-scrolled\:hover\:text-gray-200 {
-    &:where(.dark, .dark *) {
-      &:is(:where(.group)[data-scrolled] *) {
-        &:hover {
-          @media (hover: hover) {
-            color: var(--color-gray-200);
-          }
-        }
-      }
-    }
-  }
-  .group-data-\[scroll\=true\]\:dark\:hover\:text-gray-200 {
-    &:is(:where(.group)[data-scroll="true"] *) {
-      &:where(.dark, .dark *) {
-        &:hover {
-          @media (hover: hover) {
-            color: var(--color-gray-200);
-          }
-        }
-      }
-    }
-  }
   .dark\:data-\[scrolled\=true\]\:bg-slate-900 {
     &:where(.dark, .dark *) {
       &[data-scrolled="true"] {
@@ -1382,11 +1253,6 @@
       &:where(.dark, .dark *) {
         background-color: transparent;
       }
-    }
-  }
-  .\[\&\[data-scrolled\=true\]\]\:bg-white {
-    &[data-scrolled=true] {
-      background-color: var(--color-white);
     }
   }
 }
