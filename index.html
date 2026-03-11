@@ -43,8 +43,11 @@
     <script src="./src/js/header.js" defer></script>
 
     <!-- glightbox -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
     <!-- Open Graph (SEO & Social) -->
     <meta property="og:title" content="Base - Tailwind CSS Startup Template" />
@@ -59,30 +62,27 @@
       content="https://tailwind-startup-template.vercel.app/src/assets/img/contents/og-img.png"
     />
 
-    <meta
-      property="og:url"
-      content="https://tailwind-startup-template.vercel.app/"
-    />
+    <meta property="og:url" content="https://tailwind-startup-template.vercel.app/" />
 
     <meta property="og:type" content="website" />
   </head>
 
   <body
-    class="md:bg-[url('../src/assets/img/backgrounds/hero-layer1.png'),url('../src/assets/img/backgrounds/hero-layer2.svg')] md:bg-no-repeat md:bg-top-right md:bg-size-[50%] 2xl:bg-size-[40%] dark:bg-slate-900"
+    class="md:bg-[url('../src/assets/img/backgrounds/hero-layer1.png'),url('../src/assets/img/backgrounds/hero-layer2.svg')] md:bg-size-[50%] md:bg-top-right md:bg-no-repeat 2xl:bg-size-[40%] dark:bg-slate-900"
   >
     <header
       data-scrolled="false"
-      class="sticky top-0 z-50 w-full mt-6 lg:mt-0 group data-[scrolled=true]:bg-white dark:data-[scrolled=true]:bg-slate-900 data-[scrolled=true]:shadow-md"
+      class="group sticky top-0 z-50 mt-6 w-full data-[scrolled=true]:bg-white data-[scrolled=true]:shadow-md lg:mt-0 dark:data-[scrolled=true]:bg-slate-900"
     >
       <div
-        class="header-container max-w-7xl 2xl:max-w-350 lg:mx-auto lg:py-4 lg:flex lg:items-center lg:justify-between"
+        class="header-container max-w-7xl lg:mx-auto lg:flex lg:items-center lg:justify-between lg:py-4 2xl:max-w-350"
       >
         <div
-          class="header-left flex items-center justify-between py-3 px-6 md:px-8 lg:w-1/2 lg:p-0"
+          class="header-left flex items-center justify-between px-6 py-3 md:px-8 lg:w-1/2 lg:p-0"
         >
           <a
             href="/"
-            class="w-26 md:w-32 lg:w-48 transition-transform duration-300 hover:scale-102"
+            class="w-26 transition-transform duration-300 hover:scale-102 md:w-32 lg:w-48"
           >
             <img
               src="./src/assets/img/contents/logo-light.svg"
@@ -95,12 +95,10 @@
               class="hidden dark:block"
             />
           </a>
-          <nav
-            class="relative flex items-center justify-between gap-8 w-[25%] md:w-25 lg:w-auto"
-          >
+          <nav class="relative flex w-[25%] items-center justify-between gap-8 md:w-25 lg:w-auto">
             <button
               aria-label="Toggle theme"
-              class="block lg:hidden w-6 md:w-8"
+              class="block w-6 md:w-8 lg:hidden"
               data-btn="switch-mode"
             >
               <img
@@ -117,14 +115,14 @@
               />
             </button>
 
-            <button class="lg:hidden text-xl md:text-[26px]" data-btn="toggle">
+            <button class="text-xl md:text-[26px] lg:hidden" data-btn="toggle">
               <span
-                class="fa-solid fa-bars md:text-white dark:text-slate-100 md:group-data-[scrolled=true]:text-slate-800 transition-transform duration-300"
+                class="fa-solid fa-bars transition-transform duration-300 md:text-white md:group-data-[scrolled=true]:text-slate-800 dark:text-slate-100"
               ></span>
             </button>
 
             <ul
-              class="absolute lg:static top-[180%] -right-4 md:right-0 lg:top-[120%] lg:right-0 flex flex-col lg:flex-row gap-4 lg:gap-10 lg:items-center w-[95vw] md:w-180 lg:w-full pt-4 pb-4 px-6 text-gray-500 dark:text-slate-100 font-medium lg:text-lg bg-white dark:bg-slate-800 lg:bg-transparent lg:dark:bg-transparent border-none rounded-md shadow-md lg:shadow-none opacity-0 lg:opacity-100 transition-all duration-100"
+              class="absolute top-[180%] -right-4 flex w-[95vw] flex-col gap-4 rounded-md border-none bg-white px-6 pt-4 pb-4 font-medium text-gray-500 opacity-0 shadow-md transition-all duration-100 md:right-0 md:w-180 lg:static lg:top-[120%] lg:right-0 lg:w-full lg:flex-row lg:items-center lg:gap-10 lg:bg-transparent lg:text-lg lg:opacity-100 lg:shadow-none dark:bg-slate-800 dark:text-slate-100 lg:dark:bg-transparent"
               data-list="nav-dropdown"
             >
               <li class="transition-colors duration-300 hover:text-indigo-500">
@@ -143,52 +141,48 @@
                   <span class="fa-solid fa-chevron-down text-sm"></span>
                 </a>
                 <div
-                  class="wrapper absolute left-0 top-0 lg:top-full pt-0 lg:pt-8 -translate-x-4 translate-y-10 lg:group-hover/dropdown:translate-y-0 transition duration-500 opacity-0 lg:group-hover/dropdown:opacity-100 pointer-events-none group-hover/dropdown:pointer-events-auto"
+                  class="wrapper pointer-events-none absolute top-0 left-0 -translate-x-4 translate-y-10 pt-0 opacity-0 transition duration-500 group-hover/dropdown:pointer-events-auto lg:top-full lg:pt-8 lg:group-hover/dropdown:translate-y-0 lg:group-hover/dropdown:opacity-100"
                   data-list="dropdown"
                 >
                   <ul
-                    class="dropdown-menu relative w-52 p-2 lg:pb-4 bg-white dark:bg-slate-800 text-base dark:text-slate-200 border-none rounded-md shadow-md before:content-[''] before:absolute before:-top-1.5 before:left-6 before:w-3 before:h-3 before:rotate-45 before:bg-white dark:before:bg-slate-800"
+                    class="dropdown-menu relative w-52 rounded-md border-none bg-white p-2 text-base shadow-md before:absolute before:-top-1.5 before:left-6 before:h-3 before:w-3 before:rotate-45 before:bg-white before:content-[''] lg:pb-4 dark:bg-slate-800 dark:text-slate-200 dark:before:bg-slate-800"
                   >
                     <li
-                      class="relative overflow-hidden mb-1 lg:mb-3 py-1 lg:py-2 hover:text-gray-700 dark:hover:text-slate-100 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-linear-to-r after:from-indigo-500 after:to-pink-500 after:transition-transform after:duration-500 after:ease-in-out after:-translate-x-full hover:after:translate-x-0"
+                      class="relative mb-1 overflow-hidden py-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:-translate-x-full after:bg-linear-to-r after:from-indigo-500 after:to-pink-500 after:transition-transform after:duration-500 after:ease-in-out after:content-[''] hover:text-gray-700 hover:after:translate-x-0 lg:mb-3 lg:py-2 dark:hover:text-slate-100"
                     >
                       <a href="javascript:void(0)">Blog Grid</a>
                     </li>
                     <li
-                      class="relative overflow-hidden mb-1 lg:mb-3 py-1 lg:py-2 hover:text-gray-700 dark:hover:text-slate-100 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-linear-to-r after:from-indigo-500 after:to-pink-500 after:transition-transform after:duration-500 after:ease-in-out after:-translate-x-full hover:after:translate-x-0"
+                      class="relative mb-1 overflow-hidden py-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:-translate-x-full after:bg-linear-to-r after:from-indigo-500 after:to-pink-500 after:transition-transform after:duration-500 after:ease-in-out after:content-[''] hover:text-gray-700 hover:after:translate-x-0 lg:mb-3 lg:py-2 dark:hover:text-slate-100"
                     >
                       <a href="javascript:void(0)">Blog Single</a>
                     </li>
                     <li
-                      class="relative overflow-hidden mb-1 lg:mb-3 py-1 lg:py-2 hover:text-gray-700 dark:hover:text-gray-200 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-linear-to-r after:from-indigo-500 after:to-pink-500 after:transition-transform after:duration-500 after:ease-in-out after:-translate-x-full hover:after:translate-x-0"
+                      class="relative mb-1 overflow-hidden py-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:-translate-x-full after:bg-linear-to-r after:from-indigo-500 after:to-pink-500 after:transition-transform after:duration-500 after:ease-in-out after:content-[''] hover:text-gray-700 hover:after:translate-x-0 lg:mb-3 lg:py-2 dark:hover:text-gray-200"
                     >
                       <a href="javascript:void(0)">Sign in</a>
                     </li>
                     <li
-                      class="relative overflow-hidden mb-1 lg:mb-3 py-1 lg:py-2 hover:text-gray-700 dark:hover:text-slate-100 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-linear-to-r after:from-indigo-500 after:to-pink-500 after:transition-transform after:duration-500 after:ease-in-out after:-translate-x-full hover:after:translate-x-0"
+                      class="relative mb-1 overflow-hidden py-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:-translate-x-full after:bg-linear-to-r after:from-indigo-500 after:to-pink-500 after:transition-transform after:duration-500 after:ease-in-out after:content-[''] hover:text-gray-700 hover:after:translate-x-0 lg:mb-3 lg:py-2 dark:hover:text-slate-100"
                     >
                       <a href="javascript:void(0)">Sign up</a>
                     </li>
                     <li
-                      class="relative overflow-hidden mb-1 lg:mb-3 py-1 lg:py-2 hover:text-gray-700 dark:hover:text-slate-100 after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-0.5 after:bg-linear-to-r after:from-indigo-500 after:to-pink-500 after:transition-transform after:duration-500 after:ease-in-out after:-translate-x-full hover:after:translate-x-0"
+                      class="relative mb-1 overflow-hidden py-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:-translate-x-full after:bg-linear-to-r after:from-indigo-500 after:to-pink-500 after:transition-transform after:duration-500 after:ease-in-out after:content-[''] hover:text-gray-700 hover:after:translate-x-0 lg:mb-3 lg:py-2 dark:hover:text-slate-100"
                     >
                       <a href="javascript:void(0)">404</a>
                     </li>
                   </ul>
                 </div>
               </li>
-              <li
-                class="transition-colors duration-300 lg:hover:text-indigo-500"
-              >
+              <li class="transition-colors duration-300 lg:hover:text-indigo-500">
                 <a href="javascript:void(0)">Support</a>
               </li>
             </ul>
           </nav>
         </div>
 
-        <div
-          class="header-right group/btn hidden lg:flex lg:gap-8 lg:items-center"
-        >
+        <div class="header-right group/btn hidden lg:flex lg:items-center lg:gap-8">
           <button aria-label="Toggle theme" class="w-8" data-btn="switch-mode">
             <img
               src="./src/assets/img/contents/night-mode-icon.png"
@@ -204,14 +198,14 @@
             />
           </button>
 
-          <div class="flex items-center gap-8 text-white font-medium">
+          <div class="flex items-center gap-8 font-medium text-white">
             <button
-              class="sign-in text-lg cursor-pointer transition-colors duration-200 hover:text-gray-200 group-data-[scrolled=true]:text-gray-400 group-data-[scrolled=true]:hover:text-gray-500 dark:group-data-[scrolled=true]:text-gray-100 dark:group-[scrolled=true]-scrolled:hover:text-gray-200"
+              class="sign-in dark:group-[scrolled=true]-scrolled:hover:text-gray-200 cursor-pointer text-lg transition-colors duration-200 group-data-[scrolled=true]:text-gray-400 hover:text-gray-200 group-data-[scrolled=true]:hover:text-gray-500 dark:group-data-[scrolled=true]:text-gray-100"
             >
               Sign in
             </button>
             <button
-              class="sign-up px-8 py-3 bg-white/15 hover:bg-white/25 border-none rounded-full shadow-sm cursor-pointer transition-colors duration-200 group-data-[scrolled=true]:bg-blue-500 group-data-[scrolled=true]:hover:bg-blue-600 group-data-[scrolled=true]:dark:bg:blue:500 group-data-[scrolled=true]: dark:hover:bg-blue-400"
+              class="sign-up group-data-[scrolled=true]:dark:bg:blue:500 group-data-[scrolled=true]: cursor-pointer rounded-full border-none bg-white/15 px-8 py-3 shadow-sm transition-colors duration-200 group-data-[scrolled=true]:bg-blue-500 hover:bg-white/25 group-data-[scrolled=true]:hover:bg-blue-600 dark:hover:bg-blue-400"
             >
               Sign up
             </button>
@@ -223,26 +217,24 @@
     <main>
       <section class="hero relative z-0 mb-16 md:mb-18 xl:mb-28 2xl:mb-30">
         <div
-          class="hero-container w-full max-w-7xl 2xl:max-w-350 mx-auto px-3 md:px-8 lg:px-0 pt-16 lg:pt-32 xl:pb-20 2xl:pb-40"
+          class="hero-container mx-auto w-full max-w-7xl px-3 pt-16 md:px-8 lg:px-0 lg:pt-32 xl:pb-20 2xl:max-w-350 2xl:pb-40"
           data-aos="fade-right"
           data-aos-duration="1200"
           data-aos-delay="600"
         >
           <h1
-            class="max-w-95 md:max-w-90 lg:max-w-1/2 mb-6 text-3xl lg:text-5xl lg:leading-[1.2] font-semibold dark:text-slate-50"
+            class="mb-6 max-w-95 text-3xl font-semibold md:max-w-90 lg:max-w-1/2 lg:text-5xl lg:leading-[1.2] dark:text-slate-50"
           >
             We specialize in UI/UX, Web Development, Digital Marketing.
           </h1>
-          <p
-            class="md:max-w-3/5 lg:max-w-2/5 mb-8 text-slate-500 dark:text-slate-300"
-          >
-            We craft modern digital experiences through UI/UX design, web
-            development, and digital marketing—helping businesses grow, engage
-            users, and build strong, lasting online presence.
+          <p class="mb-8 text-slate-500 md:max-w-3/5 lg:max-w-2/5 dark:text-slate-300">
+            We craft modern digital experiences through UI/UX design, web development, and digital
+            marketing—helping businesses grow, engage users, and build strong, lasting online
+            presence.
           </p>
-          <div class="lg:max-w-1/2 flex flex-col lg:flex-row items-start gap-6">
+          <div class="flex flex-col items-start gap-6 lg:max-w-1/2 lg:flex-row">
             <p
-              class="order-1 lg:order-2 text-lg font-medium transition-colors duration-300 hover:text-pink-400 dark:text-slate-50 dark:hover:text-pink-300"
+              class="order-1 text-lg font-medium transition-colors duration-300 hover:text-pink-400 lg:order-2 dark:text-slate-50 dark:hover:text-pink-300"
             >
               Call us <a href="tel:0123456789">(0123) 456 - 789</a><br />
               <small class="text-base text-slate-500 dark:text-slate-300"
@@ -251,7 +243,7 @@
             </p>
             <button
               type="button"
-              class="order-2 lg:order-1 px-6 py-4 text-white font-medium border-none rounded-full shadow-md cursor-pointer transition-colors duration-300 bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-500"
+              class="order-2 cursor-pointer rounded-full border-none bg-blue-500 px-6 py-4 font-medium text-white shadow-md transition-colors duration-300 hover:bg-blue-600 lg:order-1 dark:bg-blue-600 dark:hover:bg-blue-500"
             >
               Get Started Now
             </button>
@@ -260,27 +252,27 @@
 
         <img
           src="./src/assets/img/backgrounds/hero-icon1.svg"
-          class="pointer-events-none hidden 2xl:block absolute right-[37%] bottom-[45%]"
+          class="pointer-events-none absolute right-[37%] bottom-[45%] hidden 2xl:block"
           alt="hero icon"
         />
         <img
           src="./src/assets/img/backgrounds/hero-icon2.svg"
-          class="pointer-events-none hidden 2xl:block absolute right-[25%] bottom-[5%]"
+          class="pointer-events-none absolute right-[25%] bottom-[5%] hidden 2xl:block"
           alt="hero icon"
         />
         <img
           src="./src/assets/img/backgrounds/hero-icon3.svg"
-          class="pointer-events-none hidden 2xl:block absolute right-[8%] bottom-0"
+          class="pointer-events-none absolute right-[8%] bottom-0 hidden 2xl:block"
           alt="hero icon"
         />
       </section>
 
       <section
-        class="features grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-350 mx-auto mb-16 md:mb-18 xl:mb-28 2xl:mb-30 px-2 md:px-4 xl:px-20 2xl:px-0"
+        class="features mx-auto mb-16 grid max-w-350 grid-cols-1 gap-4 px-2 md:mb-18 md:grid-cols-2 md:gap-6 md:px-4 lg:grid-cols-3 xl:mb-28 xl:px-20 2xl:mb-30 2xl:px-0"
       >
         <article class="flex items-center gap-6">
           <div
-            class="flex items-center justify-center shrink-0 w-22 md:w-24 h-22 md:h-24 lg:w-28 lg:h-28 rounded-full bg-linear-to-br from-indigo-500 to-purple-600 shadow-lg ring-4 ring-indigo-100 dark:ring-white/10"
+            class="flex h-22 w-22 shrink-0 items-center justify-center rounded-full bg-linear-to-br from-indigo-500 to-purple-600 shadow-lg ring-4 ring-indigo-100 md:h-24 md:w-24 lg:h-28 lg:w-28 dark:ring-white/10"
           >
             <img
               src="./src/assets/img/contents/24-hours-support.png"
@@ -289,19 +281,17 @@
             />
           </div>
           <div>
-            <h3
-              class="mb-2 text-lg md:text-xl lg:text-2xl font-semibold dark:text-gray-200"
-            >
+            <h3 class="mb-2 text-lg font-semibold md:text-xl lg:text-2xl dark:text-gray-200">
               24/7 Support
             </h3>
-            <p class="max-w-full xl:max-w-4/5 text-gray-500 dark:text-gray-400">
+            <p class="max-w-full text-gray-500 xl:max-w-4/5 dark:text-gray-400">
               Always available to assist you anytime you need help.
             </p>
           </div>
         </article>
         <article class="flex items-center gap-6">
           <div
-            class="flex items-center justify-center shrink-0 w-22 md:w-24 h-22 md:h-24 lg:w-28 lg:h-28 rounded-full bg-linear-to-br from-indigo-500 to-purple-600 shadow-lg ring-4 ring-indigo-100 dark:ring-white/10"
+            class="flex h-22 w-22 shrink-0 items-center justify-center rounded-full bg-linear-to-br from-indigo-500 to-purple-600 shadow-lg ring-4 ring-indigo-100 md:h-24 md:w-24 lg:h-28 lg:w-28 dark:ring-white/10"
           >
             <img
               src="./src/assets/img/contents/ownership.png"
@@ -310,33 +300,25 @@
             />
           </div>
           <div>
-            <h3
-              class="text-lg md:text-xl lg:text-2xl font-semibold mb-2 dark:text-gray-200"
-            >
+            <h3 class="mb-2 text-lg font-semibold md:text-xl lg:text-2xl dark:text-gray-200">
               Take Ownership
             </h3>
-            <p class="max-w-full xl:max-w-4/5 text-gray-500 dark:text-gray-400">
+            <p class="max-w-full text-gray-500 xl:max-w-4/5 dark:text-gray-400">
               We take full responsibility for every task and deliver results.
             </p>
           </div>
         </article>
         <article class="flex items-center gap-6">
           <div
-            class="flex items-center justify-center shrink-0 w-22 md:w-24 h-22 md:h-24 lg:w-28 lg:h-28 rounded-full bg-linear-to-br from-indigo-500 to-purple-600 shadow-lg ring-4 ring-indigo-100 dark:ring-white/10"
+            class="flex h-22 w-22 shrink-0 items-center justify-center rounded-full bg-linear-to-br from-indigo-500 to-purple-600 shadow-lg ring-4 ring-indigo-100 md:h-24 md:w-24 lg:h-28 lg:w-28 dark:ring-white/10"
           >
-            <img
-              src="./src/assets/img/contents/teamwork.png"
-              alt="teamwork icon"
-              class="w-[65%]"
-            />
+            <img src="./src/assets/img/contents/teamwork.png" alt="teamwork icon" class="w-[65%]" />
           </div>
           <div>
-            <h3
-              class="mb-2 text-lg md:text-xl lg:text-2xl font-semibold dark:text-gray-200"
-            >
+            <h3 class="mb-2 text-lg font-semibold md:text-xl lg:text-2xl dark:text-gray-200">
               Team Work
             </h3>
-            <p class="max-w-full xl:max-w-4/5 text-gray-500 dark:text-gray-400">
+            <p class="max-w-full text-gray-500 xl:max-w-4/5 dark:text-gray-400">
               We collaborate closely to achieve the best outcomes together.
             </p>
           </div>
@@ -344,20 +326,16 @@
       </section>
 
       <section
-        class="about flex md:gap-2 lg:gap-24 items-center max-w-7xl 2xl:max-w-350 mx-auto mb-16 md:mb-18 xl:mb-28 2xl:mb-30 md:px-5 lg:px-0"
+        class="about mx-auto mb-16 flex max-w-7xl items-center md:mb-18 md:gap-2 md:px-5 lg:gap-24 lg:px-0 xl:mb-28 2xl:mb-30 2xl:max-w-350"
       >
         <div
-          class="hidden md:grid md:grid-cols-2 gap-6"
+          class="hidden gap-6 md:grid md:grid-cols-2"
           data-aos="fade-right"
           data-aos-duration="1000"
           data-aos-delay="300"
         >
           <div class="relative col-span-1">
-            <img
-              src="./src/assets/img/contents/about-1.png"
-              alt="about image"
-              aria-hidden="true"
-            />
+            <img src="./src/assets/img/contents/about-1.png" alt="about image" aria-hidden="true" />
             <img
               src="./src/assets/img/backgrounds/about-icon1.svg"
               alt="decoration icon"
@@ -365,14 +343,8 @@
             />
           </div>
 
-          <div
-            class="relative col-span-1 row-span-2 flex justify-center items-center"
-          >
-            <img
-              src="./src/assets/img/contents/about-2.png"
-              alt="about image"
-              class="shrink-0"
-            />
+          <div class="relative col-span-1 row-span-2 flex items-center justify-center">
+            <img src="./src/assets/img/contents/about-2.png" alt="about image" class="shrink-0" />
             <img
               src="./src/assets/img/backgrounds/about-icon2.svg"
               alt="decoration icon"
@@ -388,59 +360,51 @@
           </div>
 
           <div class="col-span-1">
-            <img
-              src="./src/assets/img/contents/about-3.png"
-              alt="about image"
-            />
+            <img src="./src/assets/img/contents/about-3.png" alt="about image" />
           </div>
         </div>
         <div
-          class="md:max-w-1/2 px-2 md:px-4 lg:px-0"
+          class="px-2 md:max-w-1/2 md:px-4 lg:px-0"
           data-aos="fade-left"
           data-aos-duration="1000"
           data-aos-delay="300"
         >
-          <p
-            class="mb-4 lg:mb-8 px-2 lg:px-0 text-lg lg:text-xl text-blue-500 font-semibold"
-          >
+          <p class="mb-4 px-2 text-lg font-semibold text-blue-500 lg:mb-8 lg:px-0 lg:text-xl">
             Why Choose Us
           </p>
           <h2
-            class="mb-4 lg:mb-8 pl-2 pr-3 md:px-0 text-3xl lg:text-[42px] font-semibold dark:text-white"
+            class="mb-4 pr-3 pl-2 text-3xl font-semibold md:px-0 lg:mb-8 lg:text-[42px] dark:text-white"
           >
             We Make Our customers happy by giving Best services.
           </h2>
           <p
-            class="lg:max-w-4/5 mb-8 lg:mb-10 px-1 md:px-0 text-gray-500 dark:text-gray-400 lg:text-lg"
+            class="mb-8 px-1 text-gray-500 md:px-0 lg:mb-10 lg:max-w-4/5 lg:text-lg dark:text-gray-400"
           >
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum.
+            It is a long established fact that a reader will be distracted by the readable content
+            of a page when looking at its layout. The point of using Lorem Ipsum.
           </p>
 
           <div class="flex items-center gap-4 px-6">
-            
-            <a href="./src/assets/video/about-video.mp4" 
-             class="glightbox">
+            <a href="./src/assets/video/about-video.mp4" class="glightbox">
               <span class="relative inline-flex">
                 <span
-                  class="absolute inset-0 bg-[#FF0000]/40 rounded-full animate-ping duration-2500 delay-700 ease-linear"
+                  class="absolute inset-0 animate-ping rounded-full bg-[#FF0000]/40 delay-700 duration-2500 ease-linear"
                 >
                 </span>
-                <img src="./src/assets/img/contents/youtube-icon.png" class="w-10 lg:w-14">
+                <img src="./src/assets/img/contents/youtube-icon.png" class="w-10 lg:w-14" />
               </span>
             </a>
-            
-            <span class="text-gray-600 dark:text-gray-200 lg:text-lg"
-              >SEE HOW WE WORK</span
-            >
+
+            <span class="text-gray-600 lg:text-lg dark:text-gray-200">SEE HOW WE WORK</span>
           </div>
         </div>
       </section>
 
       <div class="h-1000"></div>
+      <div class="container mx-auto flex bg-red-500 p-4"></div>
       <!-- </div>
     
+      
 
       <section class="team">
         <div class="container"></div>
