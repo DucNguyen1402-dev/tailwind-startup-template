@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-"scripts": {
-  "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-  "build": "tailwindcss -i ./src/input.css -o ./dist/output.css"
-},
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DucNguyen1402-dev/tailwind-startup-template.git"
@@ -21,7 +21,8 @@
   "homepage": "https://github.com/DucNguyen1402-dev/tailwind-startup-template#readme",
   "devDependencies": {
     "@tailwindcss/cli": "^4.2.1"
+  },
+  "dependencies": {
+    "glightbox": "^3.3.1"
   }
-  
 }
-
