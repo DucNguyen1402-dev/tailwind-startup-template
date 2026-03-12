@@ -2,7 +2,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @layer base {
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     box-sizing: border-box;
   }
 
@@ -18,17 +20,22 @@
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-   font-family: "Inter", sans-serif;
-}
+    font-family: "Inter", sans-serif;
+  }
 
-  
-
-  img, picture, video, canvas, svg {
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
     display: block;
     max-width: 100%;
   }
 
-  button, input, textarea, select {
+  button,
+  input,
+  textarea,
+  select {
     font: inherit;
   }
 
@@ -37,7 +44,8 @@
     color: inherit;
   }
 
-  ul, ol {
+  ul,
+  ol {
     list-style: none;
   }
 }
