@@ -41,6 +41,8 @@
     <!-- custom script -->
     <script src="./src/js/header.js" defer></script>
     <script src="./src/js/team.js" defer></script>
+    <script src="./src/js/pricing.js" defer></script>
+
     <!-- glightbox -->
     <link
       rel="stylesheet"
@@ -715,13 +717,269 @@
         </div>
       </section>
 
-      <div class="h-1000"></div>
+      <section
+        class="pricing relative z-0 mt-18 after:absolute after:inset-0 after:-z-50 after:bg-[url('../src/assets/img/backgrounds/team-bg-layer1.svg'),linear-gradient(rgba(243,244,246,0.9),rgba(243,244,246,0.7))] after:bg-contain after:bg-no-repeat after:content-[''] md:mt-20 lg:mt-30 dark:after:bg-[url('../src/assets/img/backgrounds/team-bg-layer1.svg'),linear-gradient(rgba(15,23,42,0.9),rgba(15,23,42,0.7))]"
+      >
+        <!-- section decoration icon -->
+        <img
+          src="./src/assets/img/backgrounds/pricing-decoration-01.png"
+          alt="pricing decoration icon"
+          class="absolute hidden animate-spin [animation-duration:6s] md:top-5 md:left-5 md:block md:w-15 lg:top-10 lg:left-20 lg:w-18"
+        />
+        <img
+          src="./src/assets/img/backgrounds/pricing-decoration-02.png"
+          alt="pricing decoration icon"
+          class="absolute top-10 right-5 w-10 animate-bounce md:top-1/6 md:right-10 md:w-15 lg:top-25 lg:left-1/4 lg:w-20"
+        />
+        <img
+          src="./src/assets/img/backgrounds/pricing-decoration-03.png"
+          alt="pricing decoration icon"
+          class="absolute top-10 right-50 hidden w-20 lg:block"
+        />
+        <div
+          class="pricing-container flex flex-col items-center justify-center pt-20 pb-16 md:pt-24 md:pb-20 lg:mx-auto lg:max-w-7xl lg:pt-30 lg:pb-24"
+        >
+          <h2
+            class="mb-8 px-2 text-center text-3xl leading-[1.2] font-semibold lg:mx-auto lg:w-1/2 lg:px-0 lg:text-[45px] dark:text-white"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            We Offer Great Affordable Premium Prices.
+          </h2>
+          <p
+            class="mb-16 px-2 text-center text-lg text-gray-500 md:w-3/5 lg:mx-auto lg:px-0 dark:text-gray-200"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            Choose a plan that fits your needs and get powerful web solutions at the right price.
+          </p>
+          <div class="mb-18 flex items-center justify-center gap-4">
+            <button
+              class="monthly-label cursor-pointer font-medium text-green-500 transition-colors duration-200 select-none"
+            >
+              Bill Monthly
+            </button>
+            <div
+              class="switch-button inline-flex w-10 items-center rounded-full border-none bg-blue-500 p-1 lg:w-12"
+            >
+              <input
+                id="billing-toggle"
+                type="checkbox"
+                role="switch"
+                class="peer sr-only"
+                aria-hidden="true"
+              />
+              <span
+                class="inline-block h-4 w-4 rounded-full bg-white transition-transform duration-200 peer-checked:translate-x-4.5 lg:h-4.5 lg:w-4.5 lg:peer-checked:translate-x-6"
+              ></span>
+            </div>
+
+            <button
+              class="annually-label cursor-pointer font-medium text-gray-400 transition-colors duration-200 select-none"
+            >
+              Bill Annually
+            </button>
+          </div>
+          <div
+            class="grid grid-cols-1 gap-6 md:mx-4 md:grid-cols-2 md:flex-row md:gap-8 lg:mx-0 lg:grid-cols-3 lg:gap-10"
+          >
+            <div data-aos="fade-down" data-aos-duration="1500" data-aos-delay="400">
+              <article
+                class="pricing-card mx-auto flex max-w-[90%] flex-col items-center justify-center gap-4 rounded-md bg-white pt-3 pb-4 shadow-md transition-transform duration-300 md:max-w-full lg:gap-6 lg:p-4 dark:bg-linear-to-br dark:from-slate-800 dark:to-indigo-950 dark:shadow-black/30"
+              >
+                <div class="mb-3 flex items-center justify-center gap-1 lg:mb-4">
+                  <img
+                    src="./src/assets/img/contents/pricing-card-icon1.png"
+                    alt="pricing card icon"
+                    class="w-7"
+                  />
+                  <h3
+                    class="text-xl font-medium tracking-wide text-slate-900 lg:text-2xl dark:text-white"
+                  >
+                    Starter
+                  </h3>
+                </div>
+                <div class="flex items-center gap-2 dark:text-white">
+                  <span class="price flex gap-0.5 text-3xl font-semibold">
+                    <span class="price-currency">$</span>
+                    <span class="price-amount" data-monthly="29">29</span>
+                  </span>
+                  <span class="text-sm text-gray-600 dark:text-gray-300">/per month</span>
+                </div>
+                <p class="max-w-4/5 text-center text-gray-500 dark:text-gray-200">
+                  <span>Ideal for startups launching their first website</span>
+                </p>
+
+                <ul
+                  class="mx-8 mb-8 flex flex-col justify-center gap-4 self-start text-gray-500 md:mx-12 dark:text-gray-200"
+                >
+                  <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-green-500"></i>
+                    <span>Responsive Website Design</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-green-500"></i>
+                    <span>Basic SEO Setup</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-green-500"></i>
+                    <span>Email Support</span>
+                  </li>
+                </ul>
+                <button
+                  type="button"
+                  class="group relative z-0 mb-8 cursor-pointer overflow-hidden rounded-full border-none bg-blue-500 px-10 py-2.5 text-white shadow-md transition-colors duration-400 lg:px-14 lg:hover:bg-pink-500 dark:bg-blue-600 dark:lg:hover:bg-pink-600"
+                >
+                  <span class="transition-opacity duration-200 lg:group-hover:opacity-0"
+                    >Try for free</span
+                  >
+                  <span
+                    class="absolute left-1/2 -translate-x-[200%] whitespace-nowrap transition-transform duration-300 lg:group-hover:-translate-x-1/2"
+                    >7-day free trial</span
+                  >
+                </button>
+                <small
+                  class="text-xs font-medium tracking-wide text-gray-400 uppercase dark:text-gray-300"
+                  >No credit card required</small
+                >
+              </article>
+            </div>
+            <div data-aos="fade-down" data-aos-duration="1500" data-aos-delay="500">
+              <article
+                class="pricing-card mx-auto flex max-w-[90%] flex-col items-center justify-center gap-4 rounded-md border border-orange-500 bg-white pt-3 pb-4 shadow-lg transition-transform duration-300 md:max-w-full lg:scale-105 lg:gap-6 lg:border-none lg:p-4 lg:ring-1 lg:ring-orange-500 dark:bg-linear-to-br dark:from-slate-800 dark:to-indigo-950 dark:shadow-black/30"
+              >
+                <div class="mb-3 flex items-center justify-center gap-2 lg:mb-4">
+                  <img
+                    src="./src/assets/img/contents/pricing-card-icon2.png"
+                    alt="pricing card icon"
+                    class="w-7"
+                  />
+                  <h3
+                    class="text-xl font-medium tracking-wide text-slate-900 lg:text-2xl dark:text-white"
+                  >
+                    Professional
+                  </h3>
+                </div>
+                <div class="flex items-center gap-2 dark:text-white">
+                  <span class="price flex gap-0.5 text-3xl font-semibold">
+                    <span class="price-currency">$</span
+                    ><span class="price-amount" data-monthly="59">59</span>
+                  </span>
+                  <span class="text-sm text-gray-600 dark:text-gray-300">/per month</span>
+                </div>
+                <p class="max-w-4/5 text-center text-gray-500 dark:text-gray-200">
+                  <span>Designed for businesses ready to scale online.</span>
+                </p>
+
+                <ul
+                  class="mx-8 mb-8 flex flex-col justify-center gap-4 self-start text-gray-500 md:mx-12 dark:text-gray-200"
+                >
+                  <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-green-500"></i>
+                    <span>Custom Website Design</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-green-500"></i>
+                    <span>Advanced SEO Optimization</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-green-500"></i>
+                    <span>Priority Support</span>
+                  </li>
+                </ul>
+
+                <button
+                  type="button"
+                  class="group relative z-0 mb-8 cursor-pointer overflow-hidden rounded-full border-none bg-blue-500 px-10 py-2.5 text-white shadow-md transition-colors duration-400 lg:px-14 lg:hover:bg-pink-500 dark:bg-blue-600 dark:lg:hover:bg-pink-600"
+                >
+                  <span class="transition-opacity duration-200 lg:group-hover:opacity-0"
+                    >Try for free</span
+                  >
+                  <span
+                    class="absolute left-1/2 -translate-x-[200%] whitespace-nowrap transition-transform duration-300 lg:group-hover:-translate-x-1/2"
+                    >7-day free trial</span
+                  >
+                </button>
+                <small
+                  class="text-xs font-medium tracking-wide text-gray-400 uppercase dark:text-gray-300"
+                  >No credit card required</small
+                >
+              </article>
+            </div>
+
+            <div data-aos="fade-down" data-aos-duration="1500" data-aos-delay="600">
+              <article
+                class="pricing-card mx-auto flex max-w-[90%] flex-col items-center justify-center gap-4 rounded-md bg-white pt-3 pb-4 shadow-md transition-transform duration-300 md:max-w-full lg:gap-6 lg:p-4 dark:bg-linear-to-br dark:from-slate-800 dark:to-indigo-950 dark:shadow-black/30"
+              >
+                <div class="mb-3 flex items-center justify-center gap-1 lg:mb-4">
+                  <img
+                    src="./src/assets/img/contents/pricing-card-icon3.png"
+                    alt="pricing card icon"
+                    class="w-7"
+                  />
+                  <h3
+                    class="text-xl font-medium tracking-wide text-slate-900 lg:text-2xl dark:text-white"
+                  >
+                    Enterprise
+                  </h3>
+                </div>
+                <div class="flex items-center gap-2 dark:text-white">
+                  <span class="price flex gap-0.5 text-3xl font-semibold">
+                    <span class="price-currency">$</span>
+                    <span class="price-amount" data-monthly="139">139</span>
+                  </span>
+                  <span class="text-sm text-gray-600 dark:text-gray-300">/per month</span>
+                </div>
+                <p class="max-w-4/5 text-center text-gray-500 dark:text-gray-200">
+                  <span>Custom solutions for high-performance digital platforms.</span>
+                </p>
+
+                <ul
+                  class="mx-8 mb-8 flex flex-col justify-center gap-4 self-start text-gray-500 md:mx-12 dark:text-gray-200"
+                >
+                  <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-green-500"></i>
+                    <span>Fully Custom Web Solution</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-green-500"></i>
+                    <span>High-Performance Optimization</span>
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <i class="fa-solid fa-check text-green-500"></i>
+                    <span>Dedicated Expert Support</span>
+                  </li>
+                </ul>
+                <button
+                  type="button"
+                  class="group relative z-0 mb-8 cursor-pointer overflow-hidden rounded-full border-none bg-blue-500 px-10 py-2.5 text-white shadow-md transition-colors duration-400 lg:px-14 lg:hover:bg-pink-500 dark:bg-blue-600 dark:lg:hover:bg-pink-600"
+                >
+                  <span class="transition-opacity duration-200 lg:group-hover:opacity-0"
+                    >Try for free</span
+                  >
+                  <span
+                    class="absolute left-1/2 -translate-x-[200%] whitespace-nowrap transition-transform duration-300 lg:group-hover:-translate-x-1/2"
+                    >7-day free trial</span
+                  >
+                </button>
+                <small
+                  class="text-xs font-medium tracking-wide text-gray-400 uppercase dark:text-gray-300"
+                  >No credit card required</small
+                >
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="h-200"></div>
       <!-- </div>
 
 
-      <section class="pricing">
-        <div class="container"></div>
-      </section>
+  
+      
 
       <section class="portfolio"></section>
 
