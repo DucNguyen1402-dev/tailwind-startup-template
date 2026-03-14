@@ -42,6 +42,7 @@
     <script src="./src/js/header.js" defer></script>
     <script src="./src/js/team.js" defer></script>
     <script src="./src/js/pricing.js" defer></script>
+    <script src="./src/js/portfolio.js" defer></script>
 
     <!-- glightbox -->
     <link
@@ -49,6 +50,9 @@
       href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
 
     <!-- Open Graph (SEO & Social) -->
     <meta property="og:title" content="Base - Tailwind CSS Startup Template" />
@@ -974,14 +978,244 @@
         </div>
       </section>
 
+      <section
+        class="portfolio mt-20 h-420 bg-linear-to-b from-indigo-50 to-gray-50 lg:mt-30 dark:from-gray-900 dark:to-gray-800"
+      >
+        <div class="mx-auto pt-24 pb-20 lg:pt-30 xl:max-w-340">
+          <h3
+            class="mb-8 px-2 text-center text-3xl leading-[1.2] font-semibold lg:mx-auto lg:max-w-1/2 lg:px-0 lg:text-[45px] dark:text-white"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+          >
+            Elevating Brands Without the Premium Price Tag.
+          </h3>
+          <p
+            class="mb-16 px-2 text-center text-gray-500 lg:mx-auto lg:max-w-1/2 lg:px-0 lg:text-lg dark:text-gray-200"
+            data-aos="fade-down"
+            data-aos-duration="1500"
+            data-aos-delay="400"
+          >
+            Great design shouldn't be a luxury. We deliver professional-grade digital experiences
+            and strategic branding designed to scale your business efficiently and effectively.
+          </p>
+          <div>
+            <div
+              class="mx-auto mb-20 grid max-w-[90%] grid-cols-2 gap-4 rounded-lg bg-white p-3 text-gray-500 shadow-sm md:max-w-[45%] md:gap-6 lg:place-content-center lg:rounded-full lg:px-2 lg:py-2.5 xl:max-w-[55%] xl:grid-cols-[repeat(4,max-content)] dark:bg-slate-800 dark:text-gray-200"
+            >
+              <button
+                type="button"
+                class="relative z-0 h-16 cursor-pointer rounded-md px-2 font-medium transition duration-500 after:absolute after:inset-0 after:-z-10 after:rounded-md after:bg-linear-to-r after:from-blue-500 after:to-cyan-500 after:opacity-0 after:transition-opacity after:duration-300 after:content-[''] lg:h-auto lg:rounded-full lg:px-7 lg:py-2 lg:after:rounded-full"
+                data-filter="all"
+              >
+                All
+              </button>
+              <button
+                type="button"
+                class="relative z-0 h-16 cursor-pointer rounded-md px-2 font-medium transition duration-500 after:absolute after:inset-0 after:-z-10 after:rounded-md after:bg-linear-to-r after:from-blue-500 after:to-cyan-500 after:opacity-0 after:transition-opacity after:duration-300 after:content-[''] lg:h-auto lg:rounded-full lg:px-7 lg:py-2 lg:after:rounded-full"
+                data-filter="branding-strategy"
+              >
+                Branding Stategy
+              </button>
+              <button
+                type="button"
+                class="relative z-0 h-16 cursor-pointer rounded-md px-2 font-medium transition duration-500 after:absolute after:inset-0 after:-z-10 after:rounded-md after:bg-linear-to-r after:from-blue-500 after:to-cyan-500 after:opacity-0 after:transition-opacity after:duration-300 after:content-[''] lg:h-auto lg:rounded-full lg:px-7 lg:py-2 lg:after:rounded-full"
+                data-filter="digital-experiences"
+              >
+                Digital Experiences
+              </button>
+              <button
+                type="button"
+                class="relative z-0 h-16 cursor-pointer rounded-md px-2 font-medium transition duration-500 after:absolute after:inset-0 after:-z-10 after:rounded-md after:bg-linear-to-r after:from-blue-500 after:to-cyan-500 after:opacity-0 after:transition-opacity after:duration-300 after:content-[''] lg:h-auto lg:rounded-full lg:px-7 lg:py-2 lg:after:rounded-full"
+                data-filter="ecommerce"
+              >
+                Ecommerce
+              </button>
+            </div>
+            <div
+              class="project-container grid grid-cols-1 place-items-center gap-4 px-2 md:grid-cols-3 md:gap-4 md:px-4 lg:gap-10 lg:px-0"
+            >
+              <div
+                class="group relative aspect-11/8 overflow-hidden rounded-md md:col-span-1"
+                data-category="branding-strategy"
+              >
+                <div
+                  class="absolute inset-0 flex translate-y-full flex-col items-center justify-center gap-1.5 rounded-md bg-linear-to-b from-indigo-900/50 to-black/60 text-white opacity-0 transition duration-800 content-[''] group-hover:translate-y-0 group-hover:opacity-100 dark:from-indigo-900/30 dark:to-black/40"
+                >
+                  <h4 class="text-lg font-medium">Branding Strategy</h4>
+                  <div class="flex items-center justify-center gap-2">
+                    <span class="text-sm">View project</span>
+                    <a
+                      href="javascript:void(0)"
+                      class="flex h-6 w-6 animate-[bounce-x_1s_infinite] items-center justify-center rounded-full bg-blue-500 transition duration-300 hover:scale-110"
+                    >
+                      <span class="fa-solid fa-arrow-right"></span>
+                    </a>
+                  </div>
+                </div>
+                <img
+                  src="./src/assets/img/contents/portfolio-project-1.jpg"
+                  alt="porfolio project"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+
+              <div
+                class="group relative aspect-11/8 overflow-hidden rounded-md md:col-span-1"
+                data-category="digital-experiences"
+              >
+                <div
+                  class="absolute inset-0 flex translate-y-full flex-col items-center justify-center gap-1.5 rounded-md bg-linear-to-b from-indigo-900/50 to-black/60 text-white opacity-0 transition duration-800 content-[''] group-hover:translate-y-0 group-hover:opacity-100"
+                >
+                  <h4 class="text-lg font-medium">Digital Experiences</h4>
+                  <div class="flex items-center justify-center gap-2">
+                    <span class="text-sm">View project</span>
+                    <a
+                      href="javascript:void(0)"
+                      class="flex h-6 w-6 animate-[bounce-x_1s_infinite] items-center justify-center rounded-full bg-blue-500 transition duration-300 hover:scale-110"
+                    >
+                      <span class="fa-solid fa-arrow-right"></span>
+                    </a>
+                  </div>
+                </div>
+                <img
+                  src="./src/assets/img/contents/portfolio-project-2.jpg"
+                  alt="porfolio project"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+
+              <div
+                class="group relative aspect-7/11 overflow-hidden rounded-md md:col-span-1 md:row-span-2"
+                data-category="digital-experiences"
+              >
+                <div
+                  class="absolute inset-0 flex translate-y-full flex-col items-center justify-center gap-1.5 rounded-md bg-linear-to-b from-indigo-900/50 to-black/60 text-white opacity-0 transition duration-800 content-[''] group-hover:translate-y-0 group-hover:opacity-100"
+                >
+                  <h4 class="text-lg font-medium">Digital Experiences</h4>
+                  <div class="flex items-center justify-center gap-2">
+                    <span class="text-sm">View project</span>
+                    <a
+                      href="javascript:void(0)"
+                      class="flex h-6 w-6 animate-[bounce-x_1s_infinite] items-center justify-center rounded-full bg-blue-500 transition duration-300 hover:scale-110"
+                    >
+                      <span class="fa-solid fa-arrow-right"></span>
+                    </a>
+                  </div>
+                </div>
+                <img
+                  src="./src/assets/img/contents/portfolio-project-3.jpg"
+                  alt="porfolio project"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+
+              <div
+                class="group relative aspect-11/4 overflow-hidden rounded-md md:col-span-2"
+                data-category="ecommerce"
+              >
+                <div
+                  class="absolute inset-0 flex translate-y-full flex-col items-center justify-center gap-1.5 rounded-md bg-linear-to-b from-indigo-900/50 to-black/60 text-white opacity-0 transition duration-800 content-[''] group-hover:translate-y-0 group-hover:opacity-100"
+                >
+                  <h4 class="text-lg font-medium">Ecommerce</h4>
+                  <div class="flex items-center justify-center gap-2">
+                    <span class="text-sm">View project</span>
+                    <a
+                      href="javascript:void(0)"
+                      class="flex h-6 w-6 animate-[bounce-x_1s_infinite] items-center justify-center rounded-full bg-blue-500 transition duration-300 hover:scale-110"
+                    >
+                      <span class="fa-solid fa-arrow-right"></span>
+                    </a>
+                  </div>
+                </div>
+                <img
+                  src="./src/assets/img/contents/portfolio-project-4.jpg"
+                  alt="porfolio project"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+
+              <div
+                class="group relative aspect-11/8 overflow-hidden rounded-md md:col-span-1"
+                data-category="branding-strategy"
+              >
+                <div
+                  class="absolute inset-0 flex translate-y-full flex-col items-center justify-center gap-1.5 rounded-md bg-linear-to-b from-indigo-900/50 to-black/60 text-white opacity-0 transition duration-800 content-[''] group-hover:translate-y-0 group-hover:opacity-100"
+                >
+                  <h4 class="text-lg font-medium">Branding Strategy</h4>
+                  <div class="flex items-center justify-center gap-2">
+                    <span class="text-sm">View project</span>
+                    <a
+                      href="javascript:void(0)"
+                      class="flex h-6 w-6 animate-[bounce-x_1s_infinite] items-center justify-center rounded-full bg-blue-500 transition duration-300 hover:scale-110"
+                    >
+                      <span class="fa-solid fa-arrow-right"></span>
+                    </a>
+                  </div>
+                </div>
+                <img
+                  src="./src/assets/img/contents/portfolio-project-5.jpg"
+                  alt="porfolio project"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+              <div
+                class="group relative aspect-11/8 overflow-hidden rounded-md md:col-span-1"
+                data-category="ecommerce"
+              >
+                <div
+                  class="absolute inset-0 flex translate-y-full flex-col items-center justify-center gap-1.5 rounded-md bg-linear-to-b from-indigo-900/50 to-black/60 text-white opacity-0 transition duration-800 content-[''] group-hover:translate-y-0 group-hover:opacity-100"
+                >
+                  <h4 class="text-lg font-medium">Ecommerce</h4>
+                  <div class="flex items-center justify-center gap-2">
+                    <span class="text-sm">View project</span>
+                    <a
+                      href="javascript:void(0)"
+                      class="flex h-6 w-6 animate-[bounce-x_1s_infinite] items-center justify-center rounded-full bg-blue-500 transition duration-300 hover:scale-110"
+                    >
+                      <span class="fa-solid fa-arrow-right"></span>
+                    </a>
+                  </div>
+                </div>
+                <img
+                  src="./src/assets/img/contents/portfolio-project-6.jpg"
+                  alt="porfolio project"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+              <div
+                class="group relative aspect-11/8 overflow-hidden rounded-md md:col-span-1"
+                data-category="digital-experiences"
+              >
+                <div
+                  class="absolute inset-0 flex translate-y-full flex-col items-center justify-center gap-1.5 rounded-md bg-linear-to-b from-indigo-900/50 to-black/60 text-white opacity-0 transition duration-800 content-[''] group-hover:translate-y-0 group-hover:opacity-100"
+                >
+                  <h4 class="text-lg font-medium">Digital Experiences</h4>
+                  <div class="flex items-center justify-center gap-2">
+                    <span class="text-sm">View project</span>
+                    <a
+                      href="javascript:void(0)"
+                      class="flex h-6 w-6 animate-[bounce-x_1s_infinite] items-center justify-center rounded-full bg-blue-500 transition duration-300 hover:scale-110"
+                    >
+                      <span class="fa-solid fa-arrow-right"></span>
+                    </a>
+                  </div>
+                </div>
+                <img
+                  src="./src/assets/img/contents/portfolio-project-7.jpg"
+                  alt="porfolio project"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div class="h-200"></div>
       <!-- </div>
 
 
-  
-      
-
-      <section class="portfolio"></section>
 
       <section class="testimonials"></section>
 
