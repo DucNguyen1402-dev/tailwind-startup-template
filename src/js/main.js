@@ -33,6 +33,43 @@ $(document).ready(function () {
       slidesToScroll: 1,
       infinite: true,
       autoplaySpeed: 5000,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+    });
+
+  $(".blogs")
+    .on("init", function () {
+      AOS.refresh();
+    })
+    .slick({
+      speed: 1000,
+      autoplay: true,
+      arrows: false,
+      dots: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      infinite: true,
+      autoplaySpeed: 5000,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
     });
 
   addBackToTop({
