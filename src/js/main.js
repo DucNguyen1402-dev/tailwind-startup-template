@@ -19,6 +19,7 @@ const lightbox = GLightbox({
 
 $(document).ready(function () {
   $(".achievement__value").countUp();
+
   $(".testimonial-cards")
     .on("init", function () {
       AOS.refresh();
