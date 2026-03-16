@@ -29,9 +29,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./dist/output.css" />
-
     <!-- AOS (Animate On Scroll) library for scroll animations -->
 
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
@@ -53,6 +50,28 @@
 
     <!-- GSAP -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Waypoints (Trigger on scroll) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <!-- jQuery (Core) -->
+
+    <!-- link css slick  -->
+    <link rel="stylesheet" href="./src/lib/slick/slick.css" />
+    <link rel="stylesheet" href="./src/lib/slick/slick-theme.css" />
+
+    <!-- Slick Slider -->
+    <script src="./src/lib/slick/slick.min.js" defer></script>
+
+    <!-- count up -->
+    <script src="./src/lib/count-up/jquery.countup.min.js" defer></script>
+
+    <!-- Back To Top -->
+    <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./dist/output.css" />
 
     <!-- Open Graph (SEO & Social) -->
     <meta property="og:title" content="Base - Tailwind CSS Startup Template" />
@@ -1212,12 +1231,247 @@
         </div>
       </section>
 
+      <section class="stats mt-20 lg:mt-30">
+        <div>
+          <h2
+            class="mb-6 px-2 text-center text-3xl leading-[1.2] font-semibold lg:mx-auto lg:max-w-1/2 lg:px-0 lg:text-[45px] dark:text-white"
+            data-aos="fade-down"
+            data-aos-duration="1200"
+            data-aos-delay="200"
+          >
+            What Our Clients Say
+          </h2>
+          <p
+            class="mx-auto mb-16 px-2 text-center text-gray-500 md:max-w-3/5 lg:max-w-2/5 lg:px-0 lg:text-lg dark:text-gray-200"
+            data-aos="fade-down"
+            data-aos-duration="1200"
+            data-aos-delay="300"
+          >
+            Hear what our clients say about their experience working with us and how our solutions
+            helped their businesses grow.
+          </p>
+          <div
+            class="testimonial-cards mx-auto max-w-[90%] md:max-w-[95%] lg:max-w-[70%] 2xl:max-w-[60%]"
+          >
+            <div>
+              <article
+                class="relative flex min-h-200 flex-col gap-4 rounded-md bg-white pt-4 pb-14 pl-6 md:min-h-auto md:flex-row md:gap-10 lg:gap-14 lg:pb-8 dark:bg-linear-to-br dark:from-indigo-500 dark:to-purple-500"
+              >
+                <div
+                  class="aspect-square max-w-[85%] shrink-0 overflow-hidden rounded-md md:max-w-70 lg:max-w-75"
+                >
+                  <img
+                    src="./src/assets/img/contents/client-avatar-01.jpg"
+                    alt="client avatar"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
+                  <blockquote
+                    class="relative mb-8 w-[90%] pt-14 text-xl font-medium text-gray-500 italic lg:max-w-4/5 lg:text-2xl dark:text-gray-100"
+                  >
+                    <div class="absolute top-0 left-0 text-2xl text-gray-400 md:text-3xl">
+                      <span class="fa-solid fa-quote-left"></span>
+                    </div>
+                    Working with this team completely transformed our digital presence. Their
+                    attention to detail, strategic thinking, and ability to deliver on time made the
+                    entire process smooth and enjoyable. We couldn't be happier with the results.
+                  </blockquote>
+                  <div>
+                    <p class="mb-2 text-lg font-medium dark:text-gray-100">Daniel Carter</p>
+                    <p class="text-sm text-gray-400 lg:text-base dark:text-gray-200">
+                      Marketing Director @ NovaTech Solutions
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="absolute right-6 bottom-2 text-2xl text-yellow-500 before:content-['★★★★★'] md:bottom-4"
+                ></div>
+                <div
+                  class="absolute top-0 right-0 h-full w-1.5 animate-[gradientFlow_1s_linear_infinite] rounded-sm bg-linear-to-b from-indigo-500 via-pink-500 to-purple-500 bg-size-[100%_200%] lg:w-2"
+                ></div>
+              </article>
+            </div>
+
+            <div>
+              <article
+                class="relative flex min-h-200 flex-col gap-4 rounded-md bg-white pt-4 pb-14 pl-6 md:min-h-auto md:flex-row md:gap-10 lg:gap-14 lg:pb-8 dark:bg-linear-to-br dark:from-indigo-500 dark:to-purple-500"
+              >
+                <div
+                  class="aspect-square max-w-[85%] shrink-0 overflow-hidden rounded-md md:max-w-70 lg:max-w-75"
+                >
+                  <img
+                    src="./src/assets/img/contents/client-avatar-02.jpg"
+                    alt="client avatar"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
+                  <blockquote
+                    class="relative mb-8 w-[90%] pt-14 text-xl font-medium text-gray-500 italic lg:max-w-4/5 lg:text-2xl dark:text-gray-100"
+                  >
+                    <div class="absolute top-0 left-0 text-2xl text-gray-400 md:text-3xl">
+                      <span class="fa-solid fa-quote-left"></span>
+                    </div>
+                    The team delivered exactly what we needed and even exceeded our expectations.
+                    Their creative ideas and clear communication helped us launch our new website
+                    smoothly. We truly appreciate their professionalism and dedication.
+                  </blockquote>
+                  <div>
+                    <p class="mb-2 text-lg font-medium dark:text-gray-300">Sarah Mitchell</p>
+                    <p class="text-sm text-gray-400 lg:text-base dark:text-gray-200">
+                      Product Manager @ Vertex Innovations
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="absolute right-6 bottom-2 text-2xl text-yellow-500 before:content-['★★★★★'] md:bottom-4"
+                ></div>
+                <div
+                  class="absolute top-0 right-0 h-full w-1.5 animate-[gradientFlow_1s_linear_infinite] rounded-sm bg-linear-to-b from-indigo-500 via-pink-500 to-purple-500 bg-size-[100%_200%] lg:w-2"
+                ></div>
+              </article>
+            </div>
+            <div>
+              <article
+                class="relative flex min-h-200 flex-col gap-4 rounded-md bg-white pt-4 pb-14 pl-6 md:min-h-auto md:flex-row md:gap-10 lg:gap-14 lg:pb-8 dark:bg-linear-to-br dark:from-indigo-500 dark:to-purple-500"
+              >
+                <div
+                  class="aspect-square max-w-[85%] shrink-0 overflow-hidden rounded-md md:max-w-70 lg:max-w-75"
+                >
+                  <img
+                    src="./src/assets/img/contents/client-avatar-03.jpg"
+                    alt="client avatar"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
+                  <blockquote
+                    class="relative mb-8 w-[90%] pt-14 text-xl font-medium text-gray-500 italic lg:max-w-4/5 lg:text-2xl dark:text-gray-100"
+                  >
+                    <div class="absolute top-0 left-0 text-2xl text-gray-400 md:text-3xl">
+                      <span class="fa-solid fa-quote-left"></span>
+                    </div>
+                    Our collaboration was both productive and enjoyable. The team understood our
+                    vision quickly and turned it into a clean, modern design. There were a few minor
+                    revisions, but the final result was definitely worth it.
+                  </blockquote>
+                  <div>
+                    <p class="mb-2 text-lg font-medium dark:text-gray-300">Michael Thompson</p>
+                    <p class="text-sm text-gray-400 lg:text-base dark:text-gray-200">
+                      Operations Manager @ BluePeak Agency
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="absolute right-6 bottom-2 text-2xl text-yellow-500 before:content-['★★★★'] md:bottom-4"
+                ></div>
+                <div
+                  class="absolute top-0 right-0 h-full w-1.5 animate-[gradientFlow_1s_linear_infinite] rounded-sm bg-linear-to-b from-indigo-500 via-pink-500 to-purple-500 bg-size-[100%_200%] lg:w-2"
+                ></div>
+              </article>
+            </div>
+            <div>
+              <article
+                class="relative flex min-h-200 flex-col gap-4 rounded-md bg-white pt-4 pb-14 pl-6 md:min-h-auto md:flex-row md:gap-10 lg:gap-14 lg:pb-8 dark:bg-linear-to-br dark:from-indigo-500 dark:to-purple-500"
+              >
+                <div
+                  class="aspect-square max-w-[85%] shrink-0 overflow-hidden rounded-md md:max-w-70 lg:max-w-75"
+                >
+                  <img
+                    src="./src/assets/img/contents/client-avatar-04.jpg"
+                    alt="client avatar"
+                    class="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
+                  <blockquote
+                    class="relative mb-8 w-[90%] pt-14 text-xl font-medium text-gray-500 italic lg:max-w-4/5 lg:text-2xl dark:text-gray-100"
+                  >
+                    <div class="absolute top-0 left-0 text-2xl text-gray-400 md:text-3xl">
+                      <span class="fa-solid fa-quote-left"></span>
+                    </div>
+                    From the first meeting to the final delivery, the experience was seamless. Their
+                    technical expertise and thoughtful design choices helped elevate our brand image
+                    and improve user engagement.
+                  </blockquote>
+                  <div>
+                    <p class="mb-2 text-lg font-medium dark:text-gray-300">Olivia Bennett</p>
+                    <p class="text-sm text-gray-400 lg:text-base dark:text-gray-200">
+                      Brand Strategist @ NovaTech Solutions
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="absolute right-6 bottom-2 text-2xl text-yellow-500 before:content-['★★★★★'] md:bottom-4"
+                ></div>
+                <div
+                  class="absolute top-0 right-0 h-full w-1.5 animate-[gradientFlow_1s_linear_infinite] rounded-sm bg-linear-to-b from-indigo-500 via-pink-500 to-purple-500 bg-size-[100%_200%] lg:w-2"
+                ></div>
+              </article>
+            </div>
+          </div>
+
+          <div
+            class="relative mt-60 grid w-full grid-cols-2 gap-6 gap-y-8 bg-linear-to-br from-indigo-500/10 to-pink-500/10 py-24 tracking-wide md:grid-cols-4 lg:justify-evenly lg:px-30 2xl:px-50 dark:from-indigo-900/40 dark:to-pink-900/40"
+          >
+            <!-- icon decoration -->
+
+            <div
+              class="absolute top-2 left-5 w-12 animate-[spin_4s_linear_infinite] overflow-hidden md:top-0 md:left-20 md:w-14 lg:top-10 lg:w-16"
+            >
+              <img
+                src="./src/assets/img/backgrounds/testimonial-decor-01.png"
+                class="h-full w-full object-cover"
+              />
+            </div>
+            <div
+              class="absolute -top-5 right-10 w-12 overflow-hidden md:-top-4 md:right-60 lg:right-100 lg:w-14"
+            >
+              <img
+                src="./src/assets/img/backgrounds/testimonial-decor-02.png"
+                class="h-full w-full object-cover"
+              />
+            </div>
+
+            <div class="absolute right-10 bottom-0 w-20 overflow-hidden lg:w-24">
+              <img
+                src="./src/assets/img/backgrounds/testimonial-decor-03.png"
+                class="h-full w-full object-cover"
+              />
+            </div>
+
+            <div class="flex flex-col items-center gap-2">
+              <h3 class="achievement__value text-4xl font-bold lg:text-5xl dark:text-white">785</h3>
+              <p class="text-base font-semibold text-gray-500 lg:text-xl dark:text-gray-300">
+                Global Brands
+              </p>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <h3 class="achievement__value text-4xl font-bold lg:text-5xl dark:text-white">533</h3>
+              <p class="text-base font-semibold text-gray-500 lg:text-xl dark:text-gray-300">
+                Happy Clients
+              </p>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <h3 class="achievement__value text-4xl font-bold lg:text-5xl dark:text-white">865</h3>
+              <p class="text-base font-semibold text-gray-500 lg:text-xl dark:text-gray-300">
+                Winning Award
+              </p>
+            </div>
+            <div class="flex flex-col items-center gap-2">
+              <h3 class="achievement__value text-4xl font-bold lg:text-5xl dark:text-white">346</h3>
+              <p class="text-base font-semibold text-gray-500 lg:text-xl dark:text-gray-300">
+                Happy Clients
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div class="h-200"></div>
       <!-- </div>
 
-
-
-      <section class="testimonials"></section>
 
       <section class="stats">
         <div class="container"></div>
