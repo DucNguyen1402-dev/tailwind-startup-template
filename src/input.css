@@ -88,6 +88,10 @@
   padding-bottom: 30px;
 }
 
+.blogs {
+  padding-bottom: 80px;
+}
+
 .slick-dots li button:before {
   display: none;
 }
