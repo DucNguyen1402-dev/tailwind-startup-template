@@ -81,6 +81,28 @@
   }
 }
 
+
+@keyframes launch {
+  0% {
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+
+  50%{
+    transform: translate(560px, -560px);
+    opacity: 0.8;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+}
+
 /* ================================
    Slick Carousel - Custom Styles
 ================================ */
@@ -153,3 +175,5 @@ input:-webkit-autofill:focus {
   -webkit-text-fill-color: #f1f5f9;
   border: 1px solid #475569;
 }
+
+
