@@ -13,9 +13,10 @@ const lightbox = GLightbox({
   selector: ".glightbox",
   touchNavigation: true,
   loop: true,
-  autoplayVideos: true,
+  autoplayVideos: false,
   width: "900px",
 });
+
 
 $(document).ready(function () {
   $(".achievement__value").countUp();
