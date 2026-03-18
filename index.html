@@ -23,9 +23,12 @@
       rel="stylesheet"
     />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mozilla+Headline:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mozilla+Headline:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Fontawsome -->
     <link
@@ -2158,73 +2161,207 @@
       </section>
     </main>
 
-    <footer class="mx-auto max-w-[90%] mt-30">
-      <div class="flex gap-4  pb-20">
-        <div class="flex flex-col gap-8 max-w-1/4">
-          <div>
-              <a
-            href="/"
-            class="w-26 transition-transform duration-300 hover:scale-102 md:w-32 lg:w-48"
-          >
+    <footer class="mt-30 bg-white/50 dark:bg-transparent">
+      <div
+        class="flex flex-col gap-10 px-3 pb-20 md:flex-row md:gap-2 xl:mx-auto xl:max-w-[90%] xl:px-0"
+      >
+        <div class="flex flex-col gap-6 md:max-w-[28%] md:gap-8 xl:max-w-1/4">
+          <div class="w-30 lg:w-36">
             <img
               src="./src/assets/img/contents/logo-light.svg"
               alt="Base logo"
-              class="block dark:hidden"
+              class="block h-full w-full object-cover dark:hidden"
             />
             <img
               src="./src/assets/img/contents/logo-dark.svg"
               alt="Base logo"
               class="hidden dark:block"
             />
-          </a>
           </div>
-          <div class="relative bg-linear-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent
-          dark:from-indigo-400 dark:to-pink-400 text-4xl font-lexend font-bold  tracking-wide leading-[1.2] ">
-
-             <p >Code your vision into reality.</p>
-          </div>
-  
-         
+          <p
+            class="font-lexend bg-linear-to-r from-indigo-500 to-pink-500 bg-clip-text text-3xl leading-[1.2] font-bold tracking-wide text-transparent md:text-[34px] xl:text-4xl dark:from-indigo-400 dark:to-pink-400"
+          >
+            Code your vision into reality.
+          </p>
         </div>
-        <div class="flex gap-8 items-center grow border border-red-500">
+        <div
+          class="flex grow flex-wrap justify-between gap-y-10 font-medium md:justify-between md:gap-y-10 xl:justify-evenly"
+        >
           <div>
-            <h3 class="text-[22px] font-medium tracking-wide dark:text-white mb-6">Quick Links</h3>
+            <h3 class="mb-8 text-[22px] tracking-wide md:text-2xl dark:text-white">Quick Links</h3>
             <nav>
-              <ul class="flex flex-col gap-2 text-gray-500 dark:text-gray-200 font-medium">
-                <li
-                  
-                >
-                  <a href="javascript:void(0) " class="transition-colors duration-200 hover:text-pink-500 dark:hover:text-pink-400">Home</a>
+              <ul
+                class="flex flex-col gap-4 font-medium text-gray-500 md:text-lg dark:text-gray-200"
+              >
+                <li>
+                  <a
+                    href="javascript:void(0) "
+                    class="transition-colors duration-200 hover:text-pink-500 dark:hover:text-pink-400"
+                    >Home</a
+                  >
                 </li>
-                <li><a href="javascript:void(0)" class="transition-colors duration-200 hover:text-pink-500 dark:hover:text-pink-400">Products</a></li>
-             
-                <li><a href="javascript:void(0)" class="transition-colors duration-200 hover:text-pink-500 dark:hover:text-pink-400">Pricing</a></li>
-                   <li class="relative">
-                  <a href="javascript:void(0)" class="transition-colors duration-200 hover:text-pink-500 dark:hover:text-pink-400"> Careers</a>
-                  <p class="absolute right-1 bottom-0.5 text-white bg-green-500 px-2 py-0.5 rounded-full text-xs">
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="transition-colors duration-200 hover:text-pink-500 dark:hover:text-pink-400"
+                    >Products</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="transition-colors duration-200 hover:text-pink-500 dark:hover:text-pink-400"
+                    >Pricing</a
+                  >
+                </li>
+                <li class="relative">
+                  <a
+                    href="javascript:void(0)"
+                    class="transition-colors duration-200 hover:text-pink-500 dark:hover:text-pink-400"
+                  >
+                    Careers</a
+                  >
+                  <p
+                    class="absolute right-1 bottom-0.5 rounded-full bg-green-500 px-2 py-0.5 text-xs text-white"
+                  >
                     Hiring
                   </p>
                 </li>
               </ul>
             </nav>
           </div>
+
+          <div>
+            <h3 class="mb-8 text-[22px] tracking-wide md:text-2xl dark:text-white">Services</h3>
+            <nav>
+              <ul
+                class="flex flex-col gap-4 font-medium text-gray-500 md:text-lg dark:text-gray-200"
+              >
+                <li>
+                  <a
+                    href="javascript:void(0) "
+                    class="transition-colors duration-200 hover:text-pink-500 dark:hover:text-pink-400"
+                    >Web Development</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="transition-colors duration-200 hover:text-pink-500 dark:hover:text-pink-400"
+                    >Graphics Design</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="transition-colors duration-200 hover:text-pink-500 dark:hover:text-pink-400"
+                    >Digital Marketing</a
+                  >
+                </li>
+                <li class="relative">
+                  <a
+                    href="javascript:void(0)"
+                    class="transition-colors duration-200 hover:text-pink-500 dark:hover:text-pink-400"
+                    >Ui/Ux Design</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <h3 class="mb-8 text-[22px] tracking-wide md:text-2xl dark:text-white">Support</h3>
+            <nav>
+              <ul
+                class="flex flex-col gap-4 font-medium text-gray-500 md:text-lg dark:text-gray-200"
+              >
+                <li>
+                  <a
+                    href="javascript:void(0) "
+                    class="transition-colors duration-200 hover:text-pink-500 dark:hover:text-pink-400"
+                    >Company</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="transition-colors duration-200 hover:text-pink-500 dark:hover:text-pink-400"
+                    >Press media</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="javascript:void(0)"
+                    class="transition-colors duration-200 hover:text-pink-500 dark:hover:text-pink-400"
+                    >Our Blog</a
+                  >
+                </li>
+                <li class="relative">
+                  <a
+                    href="javascript:void(0)"
+                    class="transition-colors duration-200 hover:text-pink-500 dark:hover:text-pink-400"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <h3 class="mb-8 text-[22px] tracking-wide md:text-2xl dark:text-white">Newsletter</h3>
+            <form nonvalidate class="text-gray-500 dark:text-gray-100">
+              <label for="email" class="mb-4 block max-w-4/5"
+                >Subscribe to receive future updates</label
+              >
+              <div
+                class="relative rounded-md border border-gray-300 bg-white shadow-sm dark:bg-slate-700/50"
+              >
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email address"
+                  class="w-full px-2 py-2 text-sm focus:outline-none"
+                />
+                <button
+                  type="button"
+                  class="absolute top-1/2 right-1 -translate-y-1/2 cursor-pointer transition-transform duration-300 hover:scale-105"
+                >
+                  <img src="./src/assets/img/contents/send-icon.png" alt="send icon" class="w-5" />
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-    
-
       </div>
-       <div class=" overflow-hidden bg-black t py-3 ">
-    <span class=" animate-[marquee_20s_infinite_linear] inline-block -translate-x-full text-white">🚀 Build faster • 💡 Learn smarter • 🔥 Join 5000+ developers</span>
-  <span class=" -translate-x-[200%] animate-[marquee_20s_infinite_linear] [animation-delay:2s] inline-block  text-white">🚀 Build faster • 💡 Learn smarter • 🔥 Join 5000+ developers</span>
- 
-  </div>
 
-      <div class="mb-6 mt-20 h-px w-full bg-gray-400"></div>
+      <div class="bg-indigo-600 px-2 py-3 text-white md:px-4">
+        <div class="container mx-auto flex flex-wrap items-center justify-between gap-6 md:gap-4">
+          <div class="flex items-center gap-4 md:gap-2">
+            <div
+              class="flex h-10 w-10 items-center justify-center rounded-full border border-indigo-700 bg-indigo-800 md:h-12 md:w-12 md:text-xl"
+            >
+              <span class="fa-solid fa-bullhorn"></span>
+            </div>
+            <p class="text-sm font-medium xl:text-base">
+              Get 30% off all UI/UX design service packages this month.
+            </p>
+          </div>
+          <button
+            class="rounded-md border-none bg-white px-3 py-1.5 text-sm font-medium text-slate-900 shadow-md transition-transform duration-300 hover:scale-105 md:px-4 md:py-2"
+          >
+            <a href="javascript:void(0)"> View details </a>
+          </button>
+        </div>
+      </div>
+
+      <div class="mx-auto mt-5 mb-6 h-px w-full max-w-[90%] bg-gray-400"></div>
       <div
-        class="flex items-center justify-between text-sm text-gray-500 xl:text-base dark:text-gray-200"
+        class="mx-auto flex max-w-[90%] flex-col gap-4 pb-6 font-medium text-gray-500 md:flex-row md:items-center md:justify-between md:gap-0 dark:text-gray-200"
       >
-        <p>&copy; 2025 Base. All rights reserved</p>
+        <p class="text-sm xl:text-base">&copy; 2025 Base. All rights reserved</p>
         <nav>
-          <ul class="flex  gap-6">
+          <ul class="flex gap-3 text-sm md:gap-6 xl:text-base">
             <li class="transition-colors duration-300 hover:text-pink-500 dark:hover:text-pink-400">
               <a href="javascript:void(0)">English</a>
             </li>
@@ -2238,7 +2375,5 @@
         </nav>
       </div>
     </footer>
-
-    <div class="h-200"></div>
   </body>
 </html>
