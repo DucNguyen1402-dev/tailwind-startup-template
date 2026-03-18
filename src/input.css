@@ -48,6 +48,12 @@
   ol {
     list-style: none;
   }
+
+
+}
+
+@theme {
+  --font-lexend: "Lora", sans-serif;
 }
 
 /* ================================
@@ -102,6 +108,27 @@
     opacity: 0;
   }
 }
+
+
+@keyframes marquee {
+    0% { transform: translateX(-100%); 
+    
+    }
+    
+    50% { transform: translateX(500%); 
+        opacity:1;
+    }
+ 
+    51%{
+     opacity:0;
+
+      transform: translateX(-500%); 
+         
+    }
+
+
+}
+
 
 /* ================================
    Slick Carousel - Custom Styles
