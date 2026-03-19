@@ -164,14 +164,15 @@
   }
 
   .slick-dots li button {
-    width: 8px;
-    height: 8px;
+     
+    width: 8px !important;
+    height: 8px !important;
     border-radius: 50%;
-    background-color: #d1d5dc;
+    background-color: #d1d5dc !important;
   }
 
   .slick-dots li.slick-active button {
-    background-color: oklch(58.5% 0.233 277.117);
+    background-color: oklch(58.5% 0.233 277.117) !important;
   }
 
   .blogs {
