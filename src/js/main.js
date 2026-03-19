@@ -8,18 +8,9 @@ AOS.init({
   disable: "mobile",
 });
 
-// Glightbox
-const lightbox = GLightbox({
-  selector: ".glightbox",
-  touchNavigation: true,
-  loop: true,
-  autoplayVideos: false,
-  width: "900px",
-});
 
 
 $(document).ready(function () {
-  $(".achievement__value").countUp();
 
   $(".testimonial-cards")
     .on("init", function () {
@@ -73,9 +64,11 @@ $(document).ready(function () {
       ],
     });
 
-  addBackToTop({
+     addBackToTop({
     diameter: 50,
     backgroundColor: "#6366F1",
     textColor: "#fff",
   });
 });
+
+
