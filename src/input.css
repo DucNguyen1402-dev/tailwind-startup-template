@@ -123,37 +123,6 @@
     display: none;
   }
 
-  /* =======================
-     FORM INPUT OVERRIDES
-   ======================== */
-
-  /* 1. REMOVE INPUT SPINNERS */
-
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-
-  /* 2. BROWSER AUTOFILL CUSTOMIZATION */
-
-  /* Light Mode */
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus {
-    -webkit-box-shadow: 0 0 0 1000px rgba(200, 210, 230, 0.3) inset;
-    -webkit-text-fill-color: #0f172a;
-    border: 1px solid #cbd5e1;
-  }
-
-  /* Dark Mode */
-  .dark input:-webkit-autofill,
-  .dark input:-webkit-autofill:hover,
-  .dark input:-webkit-autofill:focus {
-    -webkit-box-shadow: 0 0 0 1000px rgba(70, 90, 126, 0.9) inset;
-    -webkit-text-fill-color: #f1f5f9;
-    border: 1px solid #475569;
-  }
 }
 
 @layer components {
@@ -190,4 +159,38 @@
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
   }
+
 }
+
+
+/* =============================================
+     FORM INPUT OVERRIDES
+   ========================================*/
+
+  /* 1. REMOVE INPUT SPINNERS */
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* 2. BROWSER AUTOFILL CUSTOMIZATION */
+
+  /* Light Mode */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px rgba(200, 210, 230, 0.3) inset;
+    -webkit-text-fill-color: #0f172a;
+    border: 1px solid #cbd5e1;
+  }
+
+  /* Dark Mode */
+  .dark input:-webkit-autofill,
+  .dark input:-webkit-autofill:hover,
+  .dark input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px rgba(70, 90, 126, 0.9) inset;
+    -webkit-text-fill-color: #f1f5f9;
+    border: 1px solid #475569;
+  }
