@@ -693,9 +693,6 @@
   .max-w-95 {
     max-width: calc(var(--spacing) * 95);
   }
-  .max-w-260 {
-    max-width: calc(var(--spacing) * 260);
-  }
   .max-w-350 {
     max-width: calc(var(--spacing) * 350);
   }
@@ -976,8 +973,8 @@
     }
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
-  .bg-\[url\(\'\.\.\/src\/assets\/img\/contents\/check-icon\.png\'\)\] {
-    background-image: url('../src/assets/img/contents/check-icon.png');
+  .bg-\[url\(\'\.\.\/src\/assets\/img\/contents\/contact\/check-icon\.png\'\)\] {
+    background-image: url('../src/assets/img/contents/contact/check-icon.png');
   }
   .from-blue-500 {
     --tw-gradient-from: var(--color-blue-500);
@@ -1682,10 +1679,28 @@
       background-image: linear-gradient(var(--tw-gradient-stops));
     }
   }
+  .after\:bg-\[url\(\'\.\.\/src\/assets\/img\/backgrounds\/shared\/bg-layer1\.svg\'\)\,linear-gradient\(rgba\(243\,244\,246\,0\.9\)\,rgba\(243\,244\,246\,0\.7\)\)\] {
+    &::after {
+      content: var(--tw-content);
+      background-image: url('../src/assets/img/backgrounds/shared/bg-layer1.svg'),linear-gradient(rgba(243,244,246,0.9),rgba(243,244,246,0.7));
+    }
+  }
+  .after\:bg-\[url\(\'\.\.\/src\/assets\/img\/backgrounds\/shared\/team-bg-layer1\.svg\'\)\,linear-gradient\(rgba\(243\,244\,246\,0\.9\)\,rgba\(243\,244\,246\,0\.7\)\)\] {
+    &::after {
+      content: var(--tw-content);
+      background-image: url('../src/assets/img/backgrounds/shared/team-bg-layer1.svg'),linear-gradient(rgba(243,244,246,0.9),rgba(243,244,246,0.7));
+    }
+  }
   .after\:bg-\[url\(\'\.\.\/src\/assets\/img\/backgrounds\/team-bg-layer1\.svg\'\)\,linear-gradient\(rgba\(243\,244\,246\,0\.9\)\,rgba\(243\,244\,246\,0\.7\)\)\] {
     &::after {
       content: var(--tw-content);
       background-image: url('../src/assets/img/backgrounds/team-bg-layer1.svg'),linear-gradient(rgba(243,244,246,0.9),rgba(243,244,246,0.7));
+    }
+  }
+  .after\:bg-\[url\(\'\.\.\/src\/assets\/img\/backgrounds\/team\/team-bg-layer1\.svg\'\)\,linear-gradient\(rgba\(243\,244\,246\,0\.9\)\,rgba\(243\,244\,246\,0\.7\)\)\] {
+    &::after {
+      content: var(--tw-content);
+      background-image: url('../src/assets/img/backgrounds/team/team-bg-layer1.svg'),linear-gradient(rgba(243,244,246,0.9),rgba(243,244,246,0.7));
     }
   }
   .after\:from-blue-500 {
@@ -2304,11 +2319,6 @@
       max-width: 45%;
     }
   }
-  .md\:max-w-\[90\%\] {
-    @media (width >= 48rem) {
-      max-width: 90%;
-    }
-  }
   .md\:max-w-\[95\%\] {
     @media (width >= 48rem) {
       max-width: 95%;
@@ -2337,11 +2347,6 @@
   .md\:grid-cols-4 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-  }
-  .md\:grid-cols-\[repeat\(2\,minmax\(150px\,1fr\)\)\] {
-    @media (width >= 48rem) {
-      grid-template-columns: repeat(2,minmax(150px,1fr));
     }
   }
   .md\:flex-row {
@@ -2394,9 +2399,9 @@
       column-gap: calc(var(--spacing) * 0);
     }
   }
-  .md\:bg-\[url\(\'\.\.\/src\/assets\/img\/backgrounds\/hero-layer1\.png\'\)\,url\(\'\.\.\/src\/assets\/img\/backgrounds\/hero-layer2\.svg\'\)\] {
+  .md\:bg-\[url\(\'\.\.\/src\/assets\/img\/backgrounds\/body\/body-layer1\.png\'\)\,url\(\'\.\.\/src\/assets\/img\/backgrounds\/body\/body-layer2\.svg\'\)\] {
     @media (width >= 48rem) {
-      background-image: url('../src/assets/img/backgrounds/hero-layer1.png'),url('../src/assets/img/backgrounds/hero-layer2.svg');
+      background-image: url('../src/assets/img/backgrounds/body/body-layer1.png'),url('../src/assets/img/backgrounds/body/body-layer2.svg');
     }
   }
   .md\:bg-size-\[50\%\] {
@@ -2890,11 +2895,6 @@
       grid-template-columns: repeat(5, minmax(0, 1fr));
     }
   }
-  .lg\:grid-cols-\[repeat\(3\,minmax\(200px\,1fr\)\)\] {
-    @media (width >= 64rem) {
-      grid-template-columns: repeat(3,minmax(200px,1fr));
-    }
-  }
   .lg\:flex-row {
     @media (width >= 64rem) {
       flex-direction: row;
@@ -3351,11 +3351,6 @@
       max-width: var(--container-7xl);
     }
   }
-  .xl\:max-w-260 {
-    @media (width >= 80rem) {
-      max-width: calc(var(--spacing) * 260);
-    }
-  }
   .xl\:max-w-340 {
     @media (width >= 80rem) {
       max-width: calc(var(--spacing) * 340);
@@ -3773,11 +3768,35 @@
       }
     }
   }
+  .dark\:after\:bg-\[url\(\'\.\.\/src\/assets\/img\/backgrounds\/shared\/bg-layer1\.svg\'\)\,linear-gradient\(rgba\(15\,23\,42\,0\.9\)\,rgba\(15\,23\,42\,0\.7\)\)\] {
+    &:where(.dark, .dark *) {
+      &::after {
+        content: var(--tw-content);
+        background-image: url('../src/assets/img/backgrounds/shared/bg-layer1.svg'),linear-gradient(rgba(15,23,42,0.9),rgba(15,23,42,0.7));
+      }
+    }
+  }
+  .dark\:after\:bg-\[url\(\'\.\.\/src\/assets\/img\/backgrounds\/shared\/team-bg-layer1\.svg\'\)\,linear-gradient\(rgba\(15\,23\,42\,0\.9\)\,rgba\(15\,23\,42\,0\.7\)\)\] {
+    &:where(.dark, .dark *) {
+      &::after {
+        content: var(--tw-content);
+        background-image: url('../src/assets/img/backgrounds/shared/team-bg-layer1.svg'),linear-gradient(rgba(15,23,42,0.9),rgba(15,23,42,0.7));
+      }
+    }
+  }
   .dark\:after\:bg-\[url\(\'\.\.\/src\/assets\/img\/backgrounds\/team-bg-layer1\.svg\'\)\,linear-gradient\(rgba\(15\,23\,42\,0\.9\)\,rgba\(15\,23\,42\,0\.7\)\)\] {
     &:where(.dark, .dark *) {
       &::after {
         content: var(--tw-content);
         background-image: url('../src/assets/img/backgrounds/team-bg-layer1.svg'),linear-gradient(rgba(15,23,42,0.9),rgba(15,23,42,0.7));
+      }
+    }
+  }
+  .dark\:after\:bg-\[url\(\'\.\.\/src\/assets\/img\/backgrounds\/team\/team-bg-layer1\.svg\'\)\,linear-gradient\(rgba\(15\,23\,42\,0\.9\)\,rgba\(15\,23\,42\,0\.7\)\)\] {
+    &:where(.dark, .dark *) {
+      &::after {
+        content: var(--tw-content);
+        background-image: url('../src/assets/img/backgrounds/team/team-bg-layer1.svg'),linear-gradient(rgba(15,23,42,0.9),rgba(15,23,42,0.7));
       }
     }
   }

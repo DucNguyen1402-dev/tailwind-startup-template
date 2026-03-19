@@ -11,9 +11,9 @@ function toggleMode() {
   html.classList.toggle("dark");
   const iconImg = this.querySelector('[data-img="icon"]');
   if (html.classList.contains("dark")) {
-    iconImg.src = "./src/assets/img/contents/light-mode-icon.png";
+    iconImg.src = "./src/assets/img/contents/header/light-mode-icon.png";
   } else {
-    iconImg.src = "./src/assets/img/contents/night-mode-icon.png";
+    iconImg.src = "./src/assets/img/contents/header/night-mode-icon.png";
   }
 }
 
