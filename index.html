@@ -1,84 +1,15 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Basic Meta -->
+    <!-- Meta & SEO -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Title & SEO -->
     <title>Base - Tailwind CSS Startup Template</title>
     <meta
       name="description"
       content="Base is a premium Tailwind CSS startup template. Features essential sections, optimized speed, and easy customization for your next startup project."
     />
-
-    <!-- Favicon -->
     <link rel="icon" href="./src/assets/icons/favicon.svg" />
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mozilla+Headline:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mozilla+Headline:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Fontawsome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
-
-    <!-- AOS (Animate On Scroll) library for scroll animations -->
-
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script src="./src/js/main.js" defer></script>
-
-    <!-- custom script -->
-    <script type="module" src="./src/js/header.js"></script>
-    <script type="module" src="./src/js/team.js"></script>
-    <script type="module" src="./src/js/pricing.js"></script>
-    <script type="module" src="./src/js/portfolio.js"></script>
-
-    <!-- glightbox -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-
-    <!-- GSAP -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-    <!-- Waypoints (Trigger on scroll) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <!-- jQuery (Core) -->
-
-    <!-- link css slick  -->
-    <link rel="stylesheet" href="./src/lib/slick/slick.css" />
-    <link rel="stylesheet" href="./src/lib/slick/slick-theme.css" />
-
-    <!-- Slick Slider -->
-    <script src="./src/lib/slick/slick.min.js" defer></script>
-
-    <!-- count up -->
-    <script src="./src/lib/count-up/jquery.countup.min.js" defer></script>
-
-    <!-- Back To Top -->
-    <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="./dist/output.css" />
 
     <!-- Open Graph (SEO & Social) -->
     <meta property="og:title" content="Base - Tailwind CSS Startup Template" />
@@ -96,12 +27,68 @@
     <meta property="og:url" content="https://tailwind-startup-template.vercel.app/" />
 
     <meta property="og:type" content="website" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mozilla+Headline:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mozilla+Headline:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Third-party CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
+    />
+
+    <!-- Local vendor CSS -->
+    <link rel="stylesheet" href="./src/lib/slick/slick.css" />
+    <link rel="stylesheet" href="./src/lib/slick/slick-theme.css" />
+
+    <!-- App CSS -->
+    <link rel="stylesheet" href="./dist/output.css" />
+
+    <!-- Core libs (dependencies) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- jQuery plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="./src/lib/count-up/jquery.countup.min.js" defer></script>
+    <script src="./src/lib/slick/slick.min.js" defer></script>
+
+    <!-- Animation & UI libs -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
+
+    <!-- App Scripts -->
+    <script src="./src/js/main.js" defer></script>
+
+    <!-- Modules (by section) -->
+    <script type="module" src="./src/js/header.js"></script>
+    <script type="module" src="./src/js/team.js"></script>
+    <script type="module" src="./src/js/pricing.js"></script>
+    <script type="module" src="./src/js/portfolio.js"></script>
   </head>
 
   <body
-    class="md:bg-[url('../src/assets/img/backgrounds/body/body-layer1.png'),url('../src/assets/img/backgrounds/body/body-layer2.svg')] md:bg-size-[50%] md:bg-top-right md:bg-no-repeat 2xl:bg-size-[40%] dark:bg-slate-900"
+    class="relative md:bg-[url('../src/assets/img/backgrounds/body/body-layer1.png'),url('../src/assets/img/backgrounds/body/body-layer2.svg')] md:bg-size-[50%] md:bg-top-right md:bg-no-repeat 2xl:bg-size-[40%] dark:bg-slate-900"
   >
-  <!--=================================
+    <!--=================================
                   HEADER 
   =====================================-->
     <header
@@ -245,11 +232,10 @@
       </div>
     </header>
 
-  <!--=================================
+    <!--=================================
                   MAIN 
   =====================================-->
     <main>
-
       <!--=========HERO SECTION==========-->
       <section class="hero relative z-0 mb-16 md:mb-18 xl:mb-28 2xl:mb-30">
         <div
@@ -333,7 +319,11 @@
           <div
             class="flex h-22 w-22 shrink-0 items-center justify-center rounded-full bg-linear-to-br from-indigo-500 to-purple-600 shadow-lg ring-4 ring-indigo-100 md:h-24 md:w-24 lg:h-28 lg:w-28 dark:ring-white/10"
           >
-            <img src="./src/assets/img/contents/features-section/teamwork.png" alt="teamwork icon" class="w-[65%]" />
+            <img
+              src="./src/assets/img/contents/features-section/teamwork.png"
+              alt="teamwork icon"
+              class="w-[65%]"
+            />
           </div>
           <div>
             <h3 class="mb-2 text-lg font-semibold md:text-xl lg:text-2xl dark:text-gray-200">
@@ -346,7 +336,7 @@
         </article>
       </section>
 
-          <!--=========ABOUT SECTION==========-->
+      <!--=========ABOUT SECTION==========-->
       <section
         class="about mx-auto mb-16 flex max-w-7xl items-center md:mb-18 md:gap-2 md:px-5 lg:gap-24 lg:px-0 xl:mb-28 2xl:mb-30 2xl:max-w-350"
       >
@@ -357,7 +347,11 @@
           data-aos-delay="300"
         >
           <div class="relative col-span-1">
-            <img src="./src/assets/img/contents/about/about-1.png" alt="about image" aria-hidden="true" />
+            <img
+              src="./src/assets/img/contents/about/about-1.png"
+              alt="about image"
+              aria-hidden="true"
+            />
             <img
               src="./src/assets/img/backgrounds/about/about-icon1.svg"
               alt="decoration icon"
@@ -366,7 +360,11 @@
           </div>
 
           <div class="relative col-span-1 row-span-2 flex items-center justify-center">
-            <img src="./src/assets/img/contents/about/about-2.png" alt="about image" class="shrink-0" />
+            <img
+              src="./src/assets/img/contents/about/about-2.png"
+              alt="about image"
+              class="shrink-0"
+            />
             <img
               src="./src/assets/img/backgrounds/about/about-icon2.svg"
               alt="decoration icon"
@@ -437,7 +435,7 @@
         </div>
       </section>
 
-          <!--=========TEAM SECTION==========-->
+      <!--=========TEAM SECTION==========-->
       <section
         class="team relative z-0 after:absolute after:inset-0 after:-z-50 after:h-[65%] after:bg-[url('../src/assets/img/backgrounds/shared/bg-layer1.svg'),linear-gradient(rgba(243,244,246,0.9),rgba(243,244,246,0.7))] after:bg-no-repeat after:content-[''] dark:after:bg-[url('../src/assets/img/backgrounds/shared/bg-layer1.svg'),linear-gradient(rgba(15,23,42,0.9),rgba(15,23,42,0.7))]"
       >
@@ -656,7 +654,10 @@
               class="mx-auto w-[90%] rounded-md bg-white p-4 pb-12 shadow-sm transition-transform duration-300 md:w-full lg:hover:-translate-y-4 lg:hover:shadow-md dark:bg-linear-to-br dark:from-slate-800/80 dark:to-slate-900"
             >
               <div class="mb-10 w-12">
-                <img src="./src/assets/img/contents/services-section/service-card-1.png" alt="service card icon" />
+                <img
+                  src="./src/assets/img/contents/services-section/service-card-1.png"
+                  alt="service card icon"
+                />
               </div>
               <h3
                 class="mb-4 bg-linear-to-r from-indigo-600 to-purple-600 bg-clip-text text-2xl font-medium text-transparent dark:text-white"
@@ -673,7 +674,10 @@
               class="mx-auto w-[90%] rounded-md bg-white p-4 pb-12 shadow-sm transition-transform duration-300 md:w-full lg:hover:-translate-y-4 lg:hover:shadow-md dark:bg-linear-to-br dark:from-slate-800/80 dark:to-slate-900"
             >
               <div class="mb-10 w-12">
-                <img src="./src/assets/img/contents/services-section/service-card-2.png" alt="service card icon" />
+                <img
+                  src="./src/assets/img/contents/services-section/service-card-2.png"
+                  alt="service card icon"
+                />
               </div>
               <h3
                 class="mb-4 bg-linear-to-r from-indigo-600 to-purple-600 bg-clip-text text-2xl font-medium text-transparent dark:text-white"
@@ -691,7 +695,10 @@
               class="mx-auto w-[90%] rounded-md bg-white p-4 pb-12 shadow-sm transition-transform duration-300 md:w-full lg:hover:-translate-y-4 lg:hover:shadow-md dark:bg-linear-to-br dark:from-slate-800/80 dark:to-slate-900"
             >
               <div class="mb-10 w-12">
-                <img src="./src/assets/img/contents/services-section/service-card-3.png" alt="service card icon" />
+                <img
+                  src="./src/assets/img/contents/services-section/service-card-3.png"
+                  alt="service card icon"
+                />
               </div>
               <h3
                 class="mb-4 bg-linear-to-r from-indigo-600 to-purple-600 bg-clip-text text-2xl font-medium text-transparent dark:text-white"
@@ -708,7 +715,10 @@
               class="mx-auto w-[90%] rounded-md bg-white p-4 pb-12 shadow-sm transition-transform duration-300 md:w-full lg:hover:-translate-y-4 lg:hover:shadow-md dark:bg-linear-to-br dark:from-slate-800/80 dark:to-slate-900"
             >
               <div class="mb-10 w-12">
-                <img src="./src/assets/img/contents/services-section/service-card-4.png" alt="service card icon" />
+                <img
+                  src="./src/assets/img/contents/services-section/service-card-4.png"
+                  alt="service card icon"
+                />
               </div>
               <h3
                 class="mb-4 bg-linear-to-r from-indigo-600 to-purple-600 bg-clip-text text-2xl font-medium text-transparent dark:text-white"
@@ -725,7 +735,10 @@
               class="mx-auto w-[90%] rounded-md bg-white p-4 pb-12 shadow-sm transition-transform duration-300 md:w-full lg:hover:-translate-y-4 lg:hover:shadow-md dark:bg-linear-to-br dark:from-slate-800/80 dark:to-slate-900"
             >
               <div class="mb-10 w-12">
-                <img src="./src/assets/img/contents/services-section/service-card-5.png" alt="service card icon" />
+                <img
+                  src="./src/assets/img/contents/services-section/service-card-5.png"
+                  alt="service card icon"
+                />
               </div>
               <h3
                 class="mb-4 bg-linear-to-r from-indigo-600 to-purple-600 bg-clip-text text-2xl font-medium text-transparent dark:text-white"
@@ -742,7 +755,10 @@
               class="mx-auto w-[90%] rounded-md bg-white p-4 pb-12 shadow-sm transition-transform duration-300 md:w-full lg:hover:-translate-y-4 lg:hover:shadow-md dark:bg-linear-to-br dark:from-slate-800/80 dark:to-slate-900"
             >
               <div class="mb-10 w-12">
-                <img src="./src/assets/img/contents/services-section/service-card-6.png" alt="service card icon" />
+                <img
+                  src="./src/assets/img/contents/services-section/service-card-6.png"
+                  alt="service card icon"
+                />
               </div>
               <h3
                 class="mb-4 bg-linear-to-r from-indigo-600 to-purple-600 bg-clip-text text-2xl font-medium text-transparent dark:text-white"
@@ -757,7 +773,7 @@
         </div>
       </section>
 
-    <!--=========PRICING SECTION==========-->
+      <!--=========PRICING SECTION==========-->
       <section
         class="pricing relative z-0 mt-18 after:absolute after:inset-0 after:-z-50 after:bg-[url('../src/assets/img/backgrounds/shared/bg-layer1.svg'),linear-gradient(rgba(243,244,246,0.9),rgba(243,244,246,0.7))] after:bg-contain after:bg-no-repeat after:content-[''] md:mt-20 lg:mt-30 dark:after:bg-[url('../src/assets/img/backgrounds/shared/bg-layer1.svg'),linear-gradient(rgba(15,23,42,0.9),rgba(15,23,42,0.7))]"
       >
@@ -1250,7 +1266,7 @@
         </div>
       </section>
 
-     <!--=========SOCIAL PROOF SECTION==========-->
+      <!--=========SOCIAL PROOF SECTION==========-->
       <section class="social-proof mt-20 lg:mt-30">
         <div>
           <h2
@@ -1489,7 +1505,7 @@
         </div>
       </section>
 
-       <!--=========CLIENTS SECTION==========-->
+      <!--=========CLIENTS SECTION==========-->
       <section
         class="clients relative mx-auto mt-30 flex max-w-7xl flex-col items-center justify-center gap-4 pb-16 lg:gap-8"
       >
@@ -1592,7 +1608,7 @@
         <div class="absolute bottom-0 left-0 h-px w-full bg-gray-200 dark:h-[0.5px]"></div>
       </section>
 
-       <!--=========BLOG SECTION==========-->
+      <!--=========BLOG SECTION==========-->
       <section class="blog mx-auto mt-26 max-w-7xl">
         <h2
           class="mb-6 px-1 text-center text-3xl leading-[1.2] font-semibold md:px-0 lg:mx-auto lg:max-w-1/2 lg:text-[45px] dark:text-white"
@@ -1869,7 +1885,7 @@
         </div>
       </section>
 
-       <!--=========CONTACT SECTION==========-->
+      <!--=========CONTACT SECTION==========-->
       <section
         class="contact relative mt-30 bg-slate-100 pt-20 dark:bg-linear-to-b dark:from-indigo-900 dark:to-slate-900"
       >
@@ -2127,7 +2143,7 @@
         </div>
       </section>
 
-       <!--=========CTA SECTION==========-->
+      <!--=========CTA SECTION==========-->
       <section
         class="cta-bottom relative mt-30 overflow-hidden bg-linear-to-b from-blue-500 to-cyan-300"
       >
@@ -2355,7 +2371,11 @@
                   type="button"
                   class="absolute top-1/2 right-1 -translate-y-1/2 cursor-pointer transition-transform duration-300 hover:scale-105"
                 >
-                  <img src="./src/assets/img/contents/footer/send-icon.png" alt="send icon" class="w-5" />
+                  <img
+                    src="./src/assets/img/contents/footer/send-icon.png"
+                    alt="send icon"
+                    class="w-5"
+                  />
                 </button>
               </div>
             </form>
@@ -2423,6 +2443,5 @@
         </nav>
       </div>
     </footer>
-    
   </body>
 </html>
